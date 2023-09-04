@@ -1,0 +1,205 @@
+.login_container {
+  width: 100%;
+  height: auto;
+}
+.login_banner {
+  height: 100%;
+  width: 100%;
+}
+.login_img {
+  height: 800px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  margin-top: -100px;
+}
+.login_form > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 270px;
+}
+.login_form > form > img {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.login_form > form > input {
+  height: 49px;
+  width: 293px;
+  left: 10px;
+  border-radius: 10px;
+  padding: 15px, 50px, 15px, 50px;
+  border: 2px solid #297fca;
+  margin-bottom: 15px;
+}
+
+.login_form > form > input::-webkit-input-placeholder {
+  height: 19px;
+  width: 100%;
+  text-align: center !important;
+  color: #297fca !important;
+  align-content: center !important;
+}
+
+form > input {
+  color: #297fca;
+  text-align: center;
+  caret-color: black;
+}
+form > input:active,
+form > input:focus {
+  border: 2px solid #3fa2f7;
+  outline: none;
+  border-radius: 10px;
+}
+.showPassword {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 125px;
+  color: #297fca;
+}
+
+form > .forgot_pw {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+  margin-top: -5px;
+  margin-left: -135px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.loginForm_button {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  height: 48px;
+  width: 149px;
+  border-radius: 10px;
+  padding: 15px, 50px, 15px, 50px;
+  background: #297fca;
+  border: none;
+  margin-top: 0px;
+}
+.loginForm_button:focus,
+.loginForm_button:hover,
+.loginForm_button:active {
+  outline: none;
+  box-shadow: 0 0 5px #3fa2f7;
+  color: #3fa2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+.signup_link > .signupForm_button {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  height: 48px;
+  width: 161px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px, 50px, 15px, 50px;
+  background: #297fca;
+  margin-left: -5px;
+  margin-top: 20px;
+}
+.signup_link > .signupForm_button:focus,
+.signup_link > .signupForm_button:hover {
+  outline: none;
+  box-shadow: 0 0 5px #3fa2f7;
+  color: #3fa2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .login_container {
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    height: auto;
+  }
+  .login_banner {
+    height: auto;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+  }
+  .login_img {
+    height: auto;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    z-index: -1;
+    position: relative;
+    left: 0;
+    margin-top: 0px;
+  }
+  .login_form > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    margin-top: 20px;
+    margin-bottom: 270px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .login_container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .login_banner {
+    height: auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+  .login_img {
+    height: auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    z-index: -1;
+    position: relative;
+    left: 0;
+    margin-top: 0px;
+  }
+  .login_form > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+  }
+}

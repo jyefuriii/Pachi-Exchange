@@ -1,0 +1,173 @@
+.accountCreated_container {
+  width: 100%;
+  height: 650px;
+}
+.accountCreated_banner {
+  height: 735px;
+  width: 100%;
+}
+.accountCreated_img {
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+.accountCreated_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: -520px;
+}
+.accountCreated_contents > h1 {
+  height: 60px;
+  width: 1240px;
+  font-family: Arial;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+  margin-bottom: 50px;
+}
+.accountCreated_contents > h2 {
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+}
+.welcome_PachiLink {
+  text-decoration: underline;
+}
+
+.heading1 {
+  margin-bottom: 35px;
+}
+.heading2 {
+  margin-bottom: 35px;
+  max-width: 1240px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.accountLogin_link {
+  height: 23px;
+  width: 243px;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+}
+.accountLogin_link > button {
+  background-color: #297fca;
+  border-radius: 10px;
+  height: 63px;
+  width: 293px;
+  color: #fff;
+  border: none;
+  padding: 20px, 25px, 20px, 25px;
+  margin-left: -20px;
+}
+
+.accountLogin_link > button:focus,
+.accountLogin_link > button:hover {
+  outline: none;
+  box-shadow: 0 0 5px #3fa2f7;
+  color: #3fa2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+.footer {
+  height: 133px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .accountCreated_container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .accountCreated_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: -580px;
+  }
+  .accountCreated_banner {
+    height: 700px;
+    width: 100%;
+  }
+
+  .accountCreated_contents > h1 {
+    height: 25px;
+    width: 375px;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #297fca;
+    margin-bottom: 40px;
+  }
+  .accountCreated_contents > h2 {
+    height: 57px;
+    width: 323px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #297fca;
+  }
+
+  .heading1 {
+    margin-bottom: 40px;
+  }
+  .heading2 {
+    margin-top: -40px;
+  }
+
+  .welcome_PachiLink {
+    text-decoration: underline;
+    margin-left: 0;
+  }
+  .accountLogin_link > button {
+    background-color: #297fca;
+    border-radius: 10px;
+    height: 43px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: -5px;
+  }
+}

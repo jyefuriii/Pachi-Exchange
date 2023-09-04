@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  min-width: 1280px;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+  padding-right: 10px;
+  margin-right: 1px;
+  height: 25px;
+  width: 10px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .App {
+    text-align: center;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    height: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .App {
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: auto;
+  }
+}

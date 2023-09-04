@@ -1,0 +1,86 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: max-content;
+  background: none;
+}
+
+.paginate-ctnDraw {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 70px;
+  align-items: center;
+  align-content: center;
+  padding-top: 10px;
+  padding: 10px;
+  background: #3fa2f7;
+  width: 335px;
+  border: none;
+}
+.round-effectsDraw {
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: Arial;
+  font-size: 16px;
+  height: fit-content;
+  width: min-content;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: -30px;
+  margin-top: -10px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+.drawEntry_column {
+  display: flex;
+  flex-direction: column;
+  margin-top: -140px;
+  height: 300px;
+  background: #fff;
+}
+.paginate_drawPages {
+  height: 25px;
+  width: 15px;
+  padding-left: 10px;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: bold;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.round-effectsDraw:hover,
+.lArrows:hover,
+.rArrows:hover {
+  color: #297fca;
+}
+.round-effectsDraw:hover a {
+  text-decoration: none;
+  color: #297fca;
+}
+
+.active {
+  background: #297fca;
+  color: #fff;
+}
+
+.rArrows,
+.lArrows {
+  color: #fff;
+}

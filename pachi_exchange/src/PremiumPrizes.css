@@ -1,0 +1,103 @@
+.premiumPrizes_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 395px;
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+.premiumPrizes_container > img {
+  height: 250px;
+  width: 180px;
+  min-width: 170px;
+  box-shadow: 4px 4px 4px 0px #00000040;
+  margin-bottom: 30px;
+  border-radius: 14px;
+}
+
+.premiumPrizes_price {
+  margin-top: -90px;
+  margin-left: -5px;
+  align-items: center;
+  visibility: hidden;
+}
+.exchange_button {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #fff;
+  height: 49px;
+  width: 133px;
+  border: 2px solid #3fa2f7;
+  border-radius: 5px;
+  padding: 15px, 15px, 15px, 15px;
+  background: #297fca;
+  margin-bottom: 50px;
+}
+.exchange_button:hover {
+  color: #3fa2f7;
+  border: 2px solid #fff;
+  outline: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .premiumPrizes_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 205px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+  }
+  .premiumPrizes_container > img {
+    height: 200px;
+    width: 130px;
+    min-width: 130px;
+    box-shadow: 4px 4px 4px 0px #00000040;
+    margin-bottom: 30px;
+    border-radius: 14px;
+  }
+
+  .premiumPrizes_price {
+    margin-top: -90px;
+    margin-left: -5px;
+    align-items: center;
+    visibility: hidden;
+  }
+  .exchange_button {
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #fff;
+    height: 39px;
+    min-height: 39px;
+    width: 123px;
+    border: 2px solid #3fa2f7;
+    border-radius: 5px;
+    padding: 15px, 15px, 15px, 15px;
+    background: #297fca;
+    margin-bottom: 50px;
+  }
+  .exchange_button:hover {
+    color: #3fa2f7;
+    border: 2px solid #fff;
+    outline: none;
+  }
+}

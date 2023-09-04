@@ -1,0 +1,170 @@
+.landHeader_container {
+  width: 100%;
+  height: auto;
+  min-width: auto;
+}
+.land_header {
+  background: #e4f1fd;
+  height: 92px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pachi_logo {
+  height: 52px;
+  width: 283px;
+  padding-left: 25px;
+}
+
+.landingNav {
+  margin: 0;
+}
+
+.login_button {
+  background: #297fca;
+  height: 48px;
+  width: 99px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  color: #fff;
+  border: none;
+  margin-top: 0px;
+  margin-left: 600px;
+}
+.login_button:focus,
+.login_button:hover {
+  outline: none;
+  box-shadow: 0 0 5px #3fa2f7;
+  color: #3fa2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+.login_link {
+  width: 0;
+  margin-right: 730px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .landHeader_container {
+    width: 100%;
+    height: auto;
+    min-width: 481px;
+    max-width: 768px;
+  }
+
+  .landingNav {
+    display: block;
+    background: #3fa2f7;
+    width: 100%;
+    padding: 20px;
+    height: fit-content;
+    flex-direction: column;
+    align-items: left;
+    align-content: left;
+    justify-content: flex-start;
+    position: relative;
+    margin-right: 0px;
+    right: 0;
+    top: -200px;
+    float: none;
+    z-index: 1;
+    transition: ease;
+    margin-top: -200px;
+  }
+  .login_button {
+    background: none;
+    height: 23px;
+    width: fit-content;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    border: none;
+    margin-left: -150px;
+  }
+  .login_button:focus,
+  .login_button:hover {
+    color: #3fa2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 transparent;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .landHeader_container {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    max-width: 480px;
+    margin-bottom: 20px;
+  }
+  .land_header {
+    height: 70px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+  .land_header > img {
+    height: 33px;
+    width: 180px;
+    margin-top: 5px;
+    margin-left: 30px;
+    padding: 0;
+  }
+
+  .landingNav {
+    display: block;
+    background: #3fa2f7;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+    height: fit-content;
+    flex-direction: column;
+    align-items: left;
+    align-content: left;
+    justify-content: flex-start;
+    position: relative;
+    margin-right: 0px;
+    right: 0;
+    top: -200px;
+    float: none;
+    z-index: 50;
+    transition: ease;
+    margin-top: -150px;
+  }
+  .login_button {
+    background: none;
+    height: 23px;
+    width: 100%;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    border: none;
+    margin-left: -10px;
+  }
+  .login_button:focus,
+  .login_button:hover {
+    color: #3fa2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 transparent;
+  }
+}

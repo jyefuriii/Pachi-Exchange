@@ -1,0 +1,69 @@
+.premiumCollection_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 270px;
+  width: 225px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+
+.collectionCount {
+  position: absolute;
+  margin-top: -210px;
+  margin-left: 125px;
+  width: 56px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #297fca;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.premiumCollection_container > img {
+  height: 182px;
+  width: 145px;
+  min-width: 145px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+}
+
+.premiumCollection_price {
+  margin-top: -90px;
+  margin-left: -5px;
+  align-items: center;
+  visibility: hidden;
+}
+.redeem_button {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
+  line-height: 18.4px;
+  height: 52px;
+  width: 166px;
+  color: #3fa2f7;
+  border-radius: 11px;
+  border: 2px solid #e4f1fd;
+  background: #e4f1fd;
+}
+.redeem_button:hover {
+  color: #297fca;
+  border: 2px solid #fff;
+  background: #dbecfc;
+  outline: none;
+  height: 52px;
+  width: 166px;
+}
