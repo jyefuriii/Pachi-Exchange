@@ -1,0 +1,152 @@
+.homeHeader_container {
+  width: 100%;
+  height: 100%;
+  background: #e4f1fd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.home_header {
+  background: #e4f1fd;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.pageNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin-left: 0px;
+}
+.nav_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 30px;
+
+}
+
+.pachiLogo {
+  height: 52px;
+  width: 283px;
+  margin-left: 28px;
+}
+.account_name > .home_avatar{
+    margin-bottom: 0px;
+    margin-right: 700px;
+}
+
+.logout_button {
+  background: #297fca;
+  height: 48px;
+  width: 105px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  color: #fff;
+  border: none;
+}
+.logout_button:focus,
+.logout_button:hover {
+  outline: none;
+  margin: auto;
+  box-shadow: 0 0 5px #3fa2f7;
+  color: #3fa2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+.logout_link {
+  margin-top: -48px;
+  margin-right: 135px;
+  padding-left: 60px;
+}
+.home_button {
+  height: 23px;
+  width: 50px;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: #297fca;
+  border: none;
+  margin-top:-42px;
+}
+.shop_button {
+  height: 23px;
+  width: 50px;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: #297fca;
+  border: none;
+  margin-top:-42px;
+}
+.sweepstakes_button {
+  height: 23px;
+  width: max-content;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: #297fca;
+  border: none;
+  margin-top:-42px;
+}
+
+.account_button {
+  height: 100%;
+  width: 100px;
+  overflow:hidden;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: #297fca;
+  border: none;
+  padding: 0;
+  margin-top:-27px;
+}
+
+
+.home_button:focus,
+.shop_button:focus,
+.sweepstakes_button:focus,
+.account_button:focus,
+.home_button:hover,
+.shop_button:hover,
+.sweepstakes_button:hover,
+.account_button:hover,
+.home_button:active,
+.shop_button:active,
+.sweepstakes_button:active,
+.account_button:active {
+  color: #3fa2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}

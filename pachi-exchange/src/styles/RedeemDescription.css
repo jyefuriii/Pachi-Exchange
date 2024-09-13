@@ -1,0 +1,125 @@
+.redeemDesc_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-width: 1280px;
+}
+.redeemDesc_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: fit-content;
+  margin-top: 50px;
+}
+.redeemDesc_col1 {
+  height: 393px;
+  width: 385px;
+  border-radius: 60px;
+  background: #e5f1fd;
+  align-items: center;
+  align-content: center;
+  justify-content: last baseline;
+  margin-right: 63px;
+}
+.redeemDesc_col1 > img {
+  margin-top: 45px;
+  height: 304px;
+  width: 224px;
+}
+.redeemDesc_price {
+  margin-top: -70px;
+  margin-left: -5px;
+}
+.redeemDesc_col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.redeemDesc_col2 > h1 {
+  height: 120px;
+  width: 515px;
+  font-family: Arial;
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #297fca;
+}
+.redeemDesc_col2 > p {
+  height: 59px;
+  width: 500px;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: justify;
+  color: #297fca;
+  margin-bottom: 30px;
+}
+.redeemDescInput_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: -450px;
+}
+label {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+  margin-right: 26px;
+  margin-bottom: 30px;
+}
+.redeemDesc_button {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: -10px;
+  color: #fff;
+  height: 54px;
+  width: 197px;
+  border: 2px solid #3fa2f7;
+  border-radius: 11px;
+  background: #297fca;
+}
+.redeemDesc_button:hover {
+  color: #3fa2f7;
+  outline: none;
+  border: 1px solid #fff;
+}
+.redeemDescAccount_p {
+  margin-top: -40px;
+  margin-left: 5px;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #297fca;
+  width: 350px;
+  margin-bottom: 60px;
+}
+.redeemDescAccount_link {
+  margin-left: 5px;
+}

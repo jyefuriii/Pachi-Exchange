@@ -1,0 +1,146 @@
+.loginHeader_container {
+  width: 100%;
+  height: auto;
+}
+.login_header {
+  background: #e4f1fd;
+  height: 92px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.pachi_logo {
+  height: 52px;
+  width: 283px;
+  margin-top: -37px;
+  margin-left: -317px !important;
+}
+.loginNav {
+  margin: 0;
+}
+.landingPage_link {
+  margin-right: 50px;
+  width: 0;
+  height: 0;
+  margin-left: 350px;
+  margin-right: 5000px;
+}
+.home_buttons {
+  height: 23px;
+  width: 56px;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: #297fca;
+  border: none;
+  margin-left: 0px;
+  margin-top: -15px;
+}
+.home_buttons:focus,
+.home_buttons:hover {
+  color: #3fa2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .loginHeader_container {
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    height: auto;
+  }
+
+  .loginNav {
+    display: block;
+    background: #3fa2f7;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+    height: fit-content;
+    flex-direction: column;
+    align-items: left;
+    align-content: left;
+    justify-content: flex-start;
+    position: relative;
+    margin-right: 0px;
+    right: 0;
+    top: -200px;
+    float: none;
+    z-index: 50;
+    transition: ease;
+    margin-top: -150px;
+  }
+  .home_buttons {
+    height: 23px;
+    width: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+  }
+  .home_buttons:focus,
+  .home_buttons:hover {
+    color: #3fa2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .loginHeader_container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: auto;
+  }
+  .login_header {
+    height: 70px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  .login_header > img {
+    height: 33px;
+    width: 180px;
+    margin-top: 5px;
+    margin-left: 30px;
+    padding: 0;
+  }
+  .home_buttons {
+    height: 23px;
+    width: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    border: none;
+    margin-top: -320px;
+    margin-left: 10px;
+  }
+  .home_buttons:focus,
+  .home_buttons:hover {
+    color: #3fa2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+}

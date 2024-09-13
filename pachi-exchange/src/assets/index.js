@@ -1,0 +1,107 @@
+// src/assets/index.js
+export { default as pachiMobile_logo } from "./pachi_logo.png";
+export { default as pachi_logo } from "./pachi_logo.png";
+export { default as landing_bg } from "./Landing_bg.png";
+export { default as landingMobile_bg } from "./LandingMobile_bg.png";
+export { default as bannerHead_img } from "./bannerHead_img.png";
+export { default as pachi888_img } from "./pachi888.png";
+export { default as landPachi_ticket } from "./pachi_ticket.png";
+export { default as landGift_box } from "./gift_box.png";
+export { default as landArrow } from "./arrow.png";
+export { default as landArrowhead } from "./arrowhead.png";
+export { default as landSignup_img } from "./signup.png";
+export { default as apple_icon } from "./apple_icon.png";
+export { default as android_icon } from "./android_icon.png";
+export { default as chrome_icon } from "./chrome_icon.png";
+export { default as carousel_1 } from "./carousel_1.png";
+export { default as carousel_2 } from "./carousel_2.png";
+export { default as carousel_3 } from "./carousel_3.png";
+export { default as carousel_4 } from "./carousel_4.png";
+export { default as carouselMobile_1 } from "./carouselMobile_1.png";
+export { default as carouselMobile_2 } from "./carouselMobile_2.png";
+export { default as carouselMobile_3 } from "./carouselMobile_3.png";
+export { default as carouselMobile_4 } from "./carouselMobile_4.png";
+export { default as gapLogo } from "./gap_logo.png";
+export { default as birthdayCake } from "./birthday_cake.png";
+export { default as loginBg } from "./login_bg.png";
+export { default as forgotPasswordIcon } from "./pachi-exchange-favicon.png";
+export { default as favIcon } from "./pachi-exchange-favicon.ico";
+export { default as pachiLogo } from "./pachi_logo.png";
+export { default as homeBg } from "./home_bg.png";
+export { default as homeMobileBg } from "./homeMobile_bg.png";
+export { default as stepOne } from "./1.png";
+export { default as pachiPlus } from "./pachi+.png";
+export { default as shopArrow } from "./shop_arrow.png";
+export { default as stepTwo } from "./2.png";
+export { default as pachiTicket } from "./pachi_ticket.png";
+export { default as stepThree } from "./3.png";
+export { default as giftBox } from "./gift_box.png";
+export { default as pachiTrophyCat } from "./pachi_trophy_cat.png";
+export { default as pachiSweepstakes } from "./pachi_sweepstakes.png";
+export { default as avatar_fred } from "./avatar_fred.png";
+export { default as avatar_ginger } from "./avatar_ginger.png";
+export { default as shop_bg } from "./shop_bg.png";
+export { default as shopMobile_bg } from "./shopMobile_bg.png";
+export { default as browseSelect_img } from "./browseSelect_img.png";
+export { default as shop_arrow } from "./shop_arrow.png";
+export { default as cartConfirm_img } from "./cartConfirm_img.png";
+export { default as claimCollect_img } from "./claimCollect_img.png";
+export { default as claimCollect_img2 } from "./claimCollect_img2.png";
+export { default as ellipse1 } from "./ellipse1.png";
+export { default as ellipse2 } from "./ellipse2.png";
+export { default as playGameImage } from "./play_game_browser.png";
+
+// Premium Prizes
+// Exporting all the images from the assets folder
+
+export { default as cat_prize } from "./cat_prize.png";
+export { default as koi_prize } from "./koi_prize.png";
+export { default as ingot_prize } from "./ingot_prize.png";
+export { default as cookie_prize } from "./cookie_prize.png";
+export { default as dragon_prize } from "./dragon_prize.png";
+export { default as buddha_prize } from "./buddha_prize.png";
+export { default as amazon20_prize } from "./amazon20_prize.png";
+export { default as amazon50_prize } from "./amazon50_prize.png";
+export { default as amazon100_prize } from "./amazon100_prize.png";
+export { default as google20_prize } from "./google20_prize.png";
+export { default as google50_prize } from "./google50_prize.png";
+export { default as google100_prize } from "./google100_prize.png";
+export { default as itunes20_prize } from "./itunes20_prize.png";
+export { default as itunes50_prize } from "./itunes50_prize.png";
+export { default as itunes100_prize } from "./itunes100_prize.png";
+export { default as apple20_prize } from "./apple20_prize.png";
+export { default as apple50_prize } from "./apple50_prize.png";
+export { default as apple100_prize } from "./apple100_prize.png";
+export { default as mysterySmall_prize } from "./mysterySmall_prize.png";
+export { default as mysteryMedium_prize } from "./mysteryMedium_prize.png";
+export { default as mysteryLarge_prize } from "./mysteryLarge_prize.png";
+export { default as lazada500_prize } from "./lazada500_prize.png";
+export { default as lazada1000_prize } from "./lazada1000_prize.png";
+export { default as puregold500_prize } from "./puregold500_prize.png";
+export { default as puregold1000_prize } from "./puregold1000_prize.png";
+
+//Sweepstakes
+export { default as sweepstakesBg } from "./sweepstakes_bg.png";
+export { default as sweepstakesBgModal } from "./sweepstakeBG_modal.png";
+export { default as sweepstakesMobileBg } from "./sweepstakesMobile_bg.png";
+export { default as sweepstakesStep1 } from "./sweepstakes_step1.png";
+export { default as sweepstakesStep1Img } from "./sweepstakes_step1_img.png";
+export { default as sweepstakesStep2 } from "./sweepstakes_step2.png";
+export { default as sweepstakesStep3 } from "./sweepstakes_step3.png";
+export { default as dailyDraw } from "./daily_draw.png";
+export { default as weeklyDraw } from "./weekly_draw.png";
+export { default as monthlyDraw } from "./monthly_draw.png";
+export { default as dailyDrawTicket } from "./dailyDraw_ticket.png";
+export { default as weeklyDrawTicket } from "./weeklyDraw_ticket.png";
+export { default as monthlyDrawTicket } from "./monthlyDraw_ticket.png";
+export { default as sweepstakesResultBanner } from "./sweepstakesResult_banner.png";
+export { default as sweepstakesStar } from "./sweepstakes_star.png";
+
+//My Account
+export { default as accountTicket } from './account_ticket.png';
+export { default as personDetailsAvatar } from './person_details_avatar.png';
+export { default as personDetailsMobile } from './person_details_mobile.png';
+export { default as personDetailsMail } from './person_details_mail.png';
+export { default as personDetailsLocation } from './person_details_location.png';
+export { default as cashoutMoneyImage } from './cashoutMoney_img.png';
+export { default as cashoutComplete } from './cashoutComplete_img.png';

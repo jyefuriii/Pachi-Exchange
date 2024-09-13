@@ -1,0 +1,48 @@
+.entry_id {
+  height: 14px;
+  width: 110px;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-left: -15px;
+}
+.entry_type {
+  height: 14px;
+  width: 100px;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.entry_date {
+  height: 14px;
+  width: 100px;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.entryDraw_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 17px;
+  color: #297fca;
+}

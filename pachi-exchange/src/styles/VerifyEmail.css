@@ -1,0 +1,75 @@
+.verifyEmail_container {
+  width: 100%;
+  height: auto;
+  min-width: 1280px;
+}
+.verifyEmail_banner {
+  height: 652px;
+  width: 100%;
+}
+.verifyEmail_img {
+  height: 100%;
+  width: 100%;
+}
+.verifyEmail_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: -520px;
+}
+.verifyEmail_contents > h1 {
+  height: 60px;
+  width: 1240px;
+  font-family: Arial;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+  margin-bottom: 50px;
+}
+.verifyEmail_contents > h2 {
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+}
+.verifyEmail_contents > h3 {
+  height: 23px;
+  width: 1240px;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+  margin-bottom: 120px;
+}
+.heading1 {
+  margin-bottom: 35px;
+}
+.heading2 {
+  margin-bottom: 35px;
+  max-width: 1240px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.heading3 {
+  margin-bottom: 35px;
+}
+
+.footer {
+  height: 133px;
+}

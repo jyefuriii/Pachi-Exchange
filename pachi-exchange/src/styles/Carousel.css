@@ -1,0 +1,597 @@
+.carousel {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: -70px;
+}
+.slide1_img,
+.slide2_img,
+.slide3_img,
+.slide4_img {
+  display: block;
+  width: 100%;
+}
+
+.backArrow,
+.forwardArrow,
+.backArrow:hover,
+.forwardArrow:hover {
+  position: absolute;
+  color: #3fa2f7;
+  font-size: 35px;
+  margin-top: -100px;
+  z-index: 1000;
+}
+.backArrow {
+  margin-right: 85px;
+  height: 40;
+  width: 40;
+  background: "none";
+  margin-top: -100px;
+}
+.forwardArrow {
+  margin-left: 85px;
+  height: 40;
+  width: 40;
+  background: "none";
+  margin-top: -100px;
+}
+.carousel > img {
+  height: auto;
+  width: 100%;
+}
+.carousel-indicators > li {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #3fa2f7 !important;
+}
+.carousel-indicators {
+  margin-top: 50px;
+  position: relative;
+}
+.carousel-indicators .active {
+  background-color: #297fca !important;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: none !important ;
+}
+.banner_head {
+  height: 60px;
+  width: 100%;
+  font-family: Arial;
+  font-family: Arial;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+.banner_subhead {
+  height: 18px;
+  width: 482px;
+  margin-left: 0px;
+  margin-bottom: 60px;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+}
+.banner_head2 {
+  height: 120px;
+  width: 100%;
+  font-family: Arial;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: -350px;
+  margin-bottom: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #297fca;
+}
+
+.banner_head3 {
+  width: 1050px;
+  font-family: Arial;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 0px;
+  margin-bottom: -20px;
+  text-align: center;
+  color: #297fca;
+}
+.banner_head3b {
+  width: 1050px;
+  font-family: Arial;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: #297fca;
+}
+.banner_head4 {
+  height: 156px;
+  width: 100%;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #297fca;
+  margin-left: 0px;
+}
+
+.banner_contents {
+  display: flex;
+  color: #297fca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-justify: center;
+}
+.download_button {
+  background: #297fca;
+  height: 58px;
+  width: 209px;
+  margin-top: -5px;
+  margin-left: 0px;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.exchanges_button {
+  height: 58px;
+  width: 185px;
+  border-radius: 10px;
+  padding: 20px, 25px, 20px, 25px;
+  color: #fff;
+  border: none;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #297fca;
+  margin-left: 0px;
+}
+.draw_button {
+  height: 60px;
+  width: 173px;
+  border-radius: 10px;
+  padding: 20px, 25px, 20px, 25px;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background: #297fca;
+  margin-left: 0px;
+}
+.playPachi_button {
+  height: 60px;
+  width: 169px;
+  border-radius: 10px;
+  padding: 20px, 25px, 20px, 25px;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background: #297fca;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+.download_button:focus,
+.download_button:hover,
+.draw_button:focus,
+.draw_button:hover,
+.exchanges_button:focus,
+.exchanges_button:hover,
+.playPachi_button:focus,
+.playPachi_button:hover {
+  outline: none;
+  box-shadow: 0 0 5px #3fa2f7;
+  color: #3fa2f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+
+@media (max-width: 1920px) {
+  .carousel {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: -70px;
+    min-width: 1420px;
+    height: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+  .carousel_container > .carousel_mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .carousel {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    width: 700px;
+    height: 150px;
+    min-width: 481px;
+  }
+  .carousel-indicators {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    display: none;
+  }
+  .slide1_img,
+  .slide2_img,
+  .slide4_img {
+    width: 1150px;
+    height: 950;
+    object-fit: scale-down;
+    object-position: 0 100%;
+  }
+  .slide3_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+  .banner_head {
+    height: 60px;
+    width: 100%;
+    font-family: Arial;
+    font-family: Arial;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #297fca;
+    margin-left: 300px;
+    margin-bottom: 35px;
+  }
+  .banner_subhead {
+    height: 18px;
+    width: 300px;
+    margin-left: 0px;
+    margin-bottom: 60px;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #297fca;
+    margin-left: 300px;
+    margin-top: -20px;
+  }
+  .banner_head2 {
+    height: 120px;
+    width: 550px;
+    font-family: Arial;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-left: 80px;
+    margin-top: -400px;
+    margin-bottom: 90px;
+    color: #297fca;
+  }
+
+  .banner_head3 {
+    width: 767px;
+    font-family: Arial;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: -400px;
+    text-align: center;
+    color: #297fca;
+  }
+  .banner_head3b {
+    width: 767px;
+    max-width: 767px;
+    font-family: Arial;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 0px;
+    margin-top: -10px;
+    padding-bottom: 200px;
+    text-align: center;
+    color: #297fca;
+  }
+  .banner_head4 {
+    height: 156px;
+    width: 540px;
+    max-width: 767px;
+    font-family: Arial;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #297fca;
+    margin-left: 15px;
+  }
+
+  .banner_contents {
+    display: flex;
+    color: #297fca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+  }
+
+  .download_button {
+    background: #297fca;
+    height: 58px;
+    width: 209px;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 290px;
+    margin-top: 10px;
+  }
+  .exchanges_button {
+    height: 58px;
+    width: 185px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #297fca;
+    margin-left: 390px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+  }
+  .draw_button {
+    height: 60px;
+    width: 173px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: #297fca;
+    margin-top: 0px;
+  }
+  .playPachi_button {
+    height: 60px;
+    width: 169px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: #297fca;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 385px;
+  }
+  .download_button:focus,
+  .download_button:hover,
+  .draw_button:focus,
+  .draw_button:hover,
+  .exchanges_button:focus,
+  .exchanges_button:hover,
+  .playPachi_button:focus,
+  .playPachi_button:hover {
+    outline: none;
+    box-shadow: 0 0 5px #3fa2f7;
+    color: #3fa2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .carousel_container > .carousel,
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background: none !important ;
+    display: none;
+  }
+  .carousel_container > .carousel_mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 77px;
+    height: 399px;
+    width: 375px;
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  .carousel-indicators {
+    margin-top: -20px;
+    position: relative;
+  }
+  .download_button {
+    background: #297fca;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 422px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .exchanges_button {
+    height: 40px;
+    width: 156px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #297fca;
+    margin-bottom: 410px;
+  }
+  .draw_button {
+    height: 40px;
+    width: 145px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: #297fca;
+    margin-bottom: 17px;
+    margin-left: -5px;
+  }
+  .playPachi_button {
+    height: 40px;
+    width: 165px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: #297fca;
+    margin-bottom: 364px;
+  }
+  .mobileSlide1_img,
+  .mobileSlide2_img,
+  .mobileSlide3_img,
+  .mobileSlide4_img {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: 399px;
+  }
+}
