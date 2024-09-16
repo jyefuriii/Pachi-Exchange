@@ -54,7 +54,10 @@
     min-width: 481px;
     max-width: 768px;
   }
-
+  .landing_pachi_logo {
+    margin-left: 30px;
+    margin-top: 5px;;
+  }
   .landingNav {
     display: block;
     background: #3fa2f7;
@@ -88,7 +91,7 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-left: -150px;
+    margin-left: -20px;
   }
   .login_button:focus,
   .login_button:hover {
@@ -156,7 +159,7 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-left: -10px;
+    margin-left: -20px;
   }
   .login_button:focus,
   .login_button:hover {

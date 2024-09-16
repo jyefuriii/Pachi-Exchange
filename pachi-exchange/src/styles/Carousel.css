@@ -264,7 +264,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 672px) and (max-width: 768px) {
   .carousel {
     display: flex;
     flex-direction: column-reverse;
@@ -274,9 +274,12 @@
     margin-left: auto;
     margin-right: auto;
     top: 0px;
-    width: 700px;
+    width: 100% !important;
     height: 150px;
     min-width: 481px;
+  }
+  .carousel_mobile {
+    display: none;
   }
   .carousel-indicators {
     margin-top: 20px;
@@ -368,7 +371,7 @@
     font-style: normal;
     font-weight: 700;
     margin-left: 0px;
-    margin-top: -10px;
+    margin-top: 20px;
     padding-bottom: 200px;
     text-align: center;
     color: #297fca;
@@ -398,6 +401,7 @@
     align-content: center;
     text-align: center;
     text-justify: center;
+    z-index: -1;
   }
 
   .download_button {
@@ -488,7 +492,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .carousel_container > .carousel,
   .carousel-control-prev,
   .carousel-control-next,
@@ -505,10 +509,10 @@
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 77px;
-    height: 399px;
-    width: 375px;
-    min-width: 320px;
+    margin-top: 70px;
+    height: auto;
+    width: 100%;
+    min-width: 321px;
     max-width: 480px;
   }
 
@@ -593,5 +597,29 @@
     min-width: 320px;
     max-width: 480px;
     height: 399px;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel_container > .carousel,
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background: none !important ;
+    display: none;
+  }
+  .carousel_container > .carousel_mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    height: auto;
+    width: 100%;
+    max-width: 320px;
   }
 }

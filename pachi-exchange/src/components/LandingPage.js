@@ -69,7 +69,7 @@ function LandingPage() {
               className="pachi888_img"
               alt="Pachi 888"
             />
-            <h3>
+            <h3 className="bannerCol1_h3">
               A Pachinko game for both beginners and experienced players. Test
               your skills, face unique challenges, advance through various game
               levels and become number one on the Pachi+ leaderboard.
@@ -224,7 +224,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer className="landing_footer" />
       </div>
     </div>
   );

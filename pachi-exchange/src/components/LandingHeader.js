@@ -60,6 +60,7 @@ function LandingHeader() {
         background: #3f3f41;
         left: 0;
         margin-left: 0;
+        z-index:1000;
       }
     }
     @media (min-width: 320px) and (max-width: 480px) {
@@ -103,6 +104,8 @@ function LandingHeader() {
     }
     @media (min-width: 481px) and (max-width: 768px) {
       margin-right: -20px;
+      margin-top: -5px;
+      z-index:100;
     }
     div {
       width: 2.5rem;
@@ -112,6 +115,7 @@ function LandingHeader() {
       transition: all 0.3s linear;
       position: relative;
       transform-origin: 1px;
+      z-index:1000;
 
       :first-child {
         transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
