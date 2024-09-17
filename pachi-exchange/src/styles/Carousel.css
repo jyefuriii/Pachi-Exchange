@@ -264,7 +264,7 @@
   }
 }
 
-@media (min-width: 672px) and (max-width: 768px) {
+@media (min-width: 569px) and (max-width: 768px) {
   .carousel {
     display: flex;
     flex-direction: column-reverse;
@@ -276,13 +276,14 @@
     top: 0px;
     width: 100% !important;
     height: 150px;
-    min-width: 481px;
+    min-width: 569px;
+    max-width: 700px;
   }
   .carousel_mobile {
     display: none;
   }
   .carousel-indicators {
-    margin-top: 20px;
+    margin-top: -20px;
     margin-bottom: 50px;
     position: relative;
   }
@@ -318,7 +319,7 @@
     letter-spacing: 0em;
     text-align: center;
     color: #297fca;
-    margin-left: 300px;
+    margin-left: 180px;
     margin-bottom: 35px;
   }
   .banner_subhead {
@@ -334,7 +335,7 @@
     letter-spacing: 0em;
     text-align: center;
     color: #297fca;
-    margin-left: 300px;
+    margin-left: 180px;
     margin-top: -20px;
   }
   .banner_head2 {
@@ -347,7 +348,7 @@
     line-height: 60px;
     letter-spacing: 0em;
     text-align: right;
-    margin-left: 80px;
+    margin-left: 10px;
     margin-top: -400px;
     margin-bottom: 90px;
     color: #297fca;
@@ -378,7 +379,7 @@
   }
   .banner_head4 {
     height: 156px;
-    width: 540px;
+    width: 520px;
     max-width: 767px;
     font-family: Arial;
     font-size: 38px;
@@ -388,7 +389,7 @@
     letter-spacing: 0em;
     text-align: right;
     color: #297fca;
-    margin-left: 15px;
+    margin-left: -30px;
   }
 
   .banner_contents {
@@ -418,7 +419,7 @@
     line-height: 18px;
     letter-spacing: 0em;
     text-align: center;
-    margin-left: 290px;
+    margin-left: 180px;
     margin-top: 10px;
   }
   .exchanges_button {
@@ -436,7 +437,7 @@
     letter-spacing: 0em;
     text-align: center;
     background: #297fca;
-    margin-left: 390px;
+    margin-left: 310px;
     margin-top: -50px;
     margin-bottom: 100px;
   }
@@ -474,7 +475,7 @@
     background: #297fca;
     margin-top: 30px;
     margin-bottom: 100px;
-    margin-left: 385px;
+    margin-left: 315px;
   }
   .download_button:focus,
   .download_button:hover,
@@ -492,6 +493,133 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 568px) {
+  .carousel_container > .carousel {
+    background: none !important ;
+    display: none;
+  }
+  .carousel_container > .carousel_mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    height: auto;
+    width: 100%;
+    min-width: 380px;
+    max-width: 400px;
+  }
+  .backArrow,
+.forwardArrow,
+.backArrow:hover,
+.forwardArrow:hover {
+  position: absolute;
+  color: #3fa2f7;
+  font-size: 35px;
+  margin-top: -50px;
+  z-index: 1000;
+}
+.backArrow {
+  margin-right: 85px;
+  height: 40;
+  width: 40;
+  background: "none";
+  margin-top: -50px;
+}
+.forwardArrow {
+  margin-left: 85px;
+  height: 40;
+  width: 40;
+  background: "none";
+  margin-top: -50px;
+}
+
+  .carousel-indicators {
+    margin-top: -20px;
+    position: relative;
+  }
+  .download_button {
+    background: #297fca;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 422px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .exchanges_button {
+    height: 40px;
+    width: 156px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #297fca;
+    margin-bottom: 410px;
+  }
+  .draw_button {
+    height: 40px;
+    width: 145px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: #297fca;
+    margin-bottom: 17px;
+    margin-left: -5px;
+  }
+  .playPachi_button {
+    height: 40px;
+    width: 165px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: #297fca;
+    margin-bottom: 364px;
+  }
+  .mobileSlide1_img,
+  .mobileSlide2_img,
+  .mobileSlide3_img,
+  .mobileSlide4_img {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: 399px;
+  }
+}
 @media (min-width: 321px) and (max-width: 480px) {
   .carousel_container > .carousel,
   .carousel-control-prev,
@@ -513,7 +641,7 @@
     height: auto;
     width: 100%;
     min-width: 321px;
-    max-width: 480px;
+    max-width: 400px;
   }
 
   .carousel-indicators {

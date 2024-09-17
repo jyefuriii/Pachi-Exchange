@@ -462,110 +462,9 @@ span {
   margin-top: 20px;
 }
 
-/* Default Styles for Desktop (greater than 768px) */
+/* Styles for Small Screens (max-width: 768px) */
 
-@media (min-width: 481px) and (max-width: 768px) {
-  /* Adjust the logo */
-  .landingHeader_logo img {
-    width: 200px;
-    height: auto;
-  }
-
-  .banner_video {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: -50px;
-  }
-
-  .bannerHead_video > h1 {
-    font-size: 36px;
-  }
-
-  .bannerHead_video > img {
-    height: 40px;
-    width: 160px;
-  }
-
-  .banner_content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .banner_col1 {
-    margin-bottom: 20px;
-  }
-
-  .videoBanner_img {
-    width: 100% !important;
-    height: auto;
-  }
-
-  .banner_col3 > h2 {
-    font-size: 24px;
-    width: 100%;
-  }
-
-  .banner_col3 > h3 {
-    font-size: 16px;
-    width: 100%;
-  }
-
-  .rewards_hub > h1 {
-    font-size: 40px;
-  }
-
-  .rewards_hub > h2 {
-    font-size: 24px;
-    width: 100%;
-  }
-
-  .landRewards_container {
-    flex-direction: column;
-  }
-
-  .landRewards_col1,
-  .landRewards_col2 {
-    margin-right: 0;
-    text-align: center;
-  }
-
-  .landRewards_col1 > p,
-  .landRewards_col2 > p {
-    width: 100%;
-  }
-
-  .landSignup_contents > h1 {
-    font-size: 36px;
-  }
-
-  .landSignup_button {
-    width: 150px;
-    font-size: 14px;
-  }
-
-  .signup_label {
-    font-size: 14px;
-  }
-
-  .login_label {
-    font-size: 14px;
-  }
-
-  .platform_icons {
-    flex-direction: column;
-  }
-
-  .platform_col1,
-  .platform_col2,
-  .platform_col3 {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-}
-
-/* Styles for Small Screens (max-width: 480px) */
-
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 569px) and (max-width: 768px) {
   .landingPage {
     height: auto;
   }
@@ -599,11 +498,269 @@ span {
   .landingMobile_bg {
     display: flex !important;
     width: 100%;
-    max-width: 480px;
+    max-width: 768px;
     height: auto;
   }
   .banner_video {
-    margin-top: -77px;
+    margin-top: -40px;
+    height: auto;
+  }
+  .bannerHead_video > h1 {
+    font-size: 28px;
+    margin-left: -40px;
+  }
+
+  .bannerHead_video > img {
+    height: 30px;
+    width: 120px;
+    margin-left: -50px;
+    margin-top: 55px;
+  }
+
+  .banner_col1 {
+    margin-bottom: 10px;
+  }
+
+  .banner_col1 > h3 {
+    font-size: 18px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .pachi888_img {
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .learnMore_button {
+    height: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .banner_content {
+    height: auto;
+    width: 100%;
+    max-width: 768px;
+    background: #3fa2f7;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .banner_col2 {
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    height: 0;
+    padding-top: 56.25%;
+  }
+  .videoBanner_img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-width: 569px;
+    max-width: 768px;
+    object-fit: cover;
+    margin-top: -320px;
+    margin-bottom: 20px;
+  }
+
+  .banner_col3 > h2 {
+    font-size: 24px;
+    padding: 15px;
+    margin-top: 60px;
+  }
+
+  .banner_col3 > h3 {
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 15px;
+    width: 80%;
+    height: fit-content;
+  }
+  .rewards_hub {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 250px;
+  }
+
+  .rewards_hub > h1 {
+    width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .rewards_hub > h2 {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 10px;
+    width: 100%;
+  }
+  .landRewards_container {
+    height: 100%;
+    margin-bottom: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .landRewards_col1 > img,
+  .landRewards_col2 > img {
+    width: auto;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+
+  .landRewards_col1 > p,
+  .landRewards_col2 > p {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    max-width: 768px;
+  }
+  .landRewards_col1 {
+    margin-right: 0px;
+  }
+  .landRewards_col2 {
+    margin-top: 200px;
+  }
+  .landRewards_col3 {
+    position: absolute;
+    transform: rotate(90deg);
+    margin-top: -520px;
+    margin-left: -5px;
+  }
+  .landRewards_col3 > .landArrow {
+    width: 20%;
+    margin-left: -50px;
+  }
+  .landSignup_container {
+    margin-top: -650px;
+  }
+  .landSignup_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .landSignup_img {
+    height: 80%;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    object-position: left center;
+  }
+  .landSignup_contents > h1 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 350px;
+    margin-bottom: 0;
+  }
+
+  .landSignup_button {
+    height: 2.5rem;
+    font-size: 12px;
+    margin-left: -5px;
+    margin-bottom: 10px;
+  }
+  .landSignup_checkbox {
+    margin-left: 40px;
+    margin-top: 125px;
+  }
+  .signup_label {
+    font-size: 14px;
+  }
+
+  .login_label {
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: -80px;
+  }
+
+  .all_platforms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0px;
+    width: 100%;
+    height: max-content;
+    background: #3fa2f7;
+  }
+
+  .platform_icons {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .platform_col1,
+  .platform_col2 {
+    margin-right: 0;
+  }
+
+  .all_platforms > h1 {
+    font-size: 32px;
+    line-height: 32px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+  .landing_footer {
+    background: #fff;
+    width: 100%;
+    z-index: 100;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  .landingPage {
+    height: auto;
+  }
+  .landingHeader_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .landingHeader_logo > h2 {
+    height: 74px;
+    width: 50%;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #297fca;
+    margin-top: 20px;
+  }
+
+  .landing_bg {
+    display: none;
+  }
+  .landingMobile_bg {
+    display: flex !important;
+    width: 100%;
+    max-width: 568px;
+    height: auto;
+  }
+  .banner_video {
+    margin-top: -75px;
     height: auto;
   }
   .bannerHead_video > h1 {
@@ -626,6 +783,7 @@ span {
     font-size: 18px;
     margin-bottom: 0;
     width: 80%;
+    height: fit-content;
   }
 
   .pachi888_img {
@@ -635,12 +793,12 @@ span {
 
   .learnMore_button {
     height: 2.5rem;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .banner_content {
-    height:auto;
+    height: auto;
     width: 100%;
     max-width: 480px;
     background: #3fa2f7;
@@ -659,7 +817,8 @@ span {
     position: absolute;
     height: 100%;
     width: 100%;
-    max-width: 480px;
+    max-width: 568px;
+    min-width: 481px;
     object-fit: cover;
     margin-top: -270px;
   }
@@ -674,6 +833,7 @@ span {
     padding: 15px;
     margin-top: 15px;
     width: 80%;
+    height: fit-content;
   }
   .rewards_hub {
     display: flex;
@@ -720,7 +880,7 @@ span {
     max-width: 480px;
   }
   .landRewards_col1 {
-    margin-right:-0px ;
+    margin-right: -0px;
   }
   .landRewards_col2 {
     margin-top: 200px;
@@ -797,7 +957,265 @@ span {
     justify-content: center;
     align-items: center;
     align-content: center;
-  } .platform_col1, .platform_col2{
+  }
+  .platform_col1,
+  .platform_col2 {
+    margin-right: 0;
+  }
+
+  .all_platforms > h1 {
+    font-size: 32px;
+    line-height: 32px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+  .landing_footer {
+    background: #fff;
+    width: 100%;
+    z-index: 100;
+  }
+}
+/* Styles for Small Screens (max-width: 480px) */
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .landingPage {
+    height: auto;
+  }
+  .landingHeader_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .landingHeader_logo > h2 {
+    height: 74px;
+    width: 50%;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #297fca;
+    margin-top: 20px;
+  }
+
+  .landing_bg {
+    display: none;
+  }
+  .landingMobile_bg {
+    display: flex !important;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+  .banner_video {
+    margin-top: -77px;
+    height: auto;
+  }
+  .bannerHead_video > h1 {
+    font-size: 28px;
+    margin-left: -40px;
+  }
+
+  .bannerHead_video > img {
+    height: 30px;
+    width: 120px;
+    margin-left: -50px;
+    margin-top: 55px;
+  }
+
+  .banner_col1 {
+    margin-bottom: 10px;
+  }
+
+  .banner_col1 > h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .pachi888_img {
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .learnMore_button {
+    height: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .banner_content {
+    height: auto;
+    width: 100%;
+    max-width: 480px;
+    background: #3fa2f7;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .banner_col2 {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    height: 0;
+    padding-top: 56.25%;
+  }
+  .videoBanner_img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-width: 321px;
+    max-width: 480px;
+    object-fit: cover;
+    margin-top: -270px;
+  }
+
+  .banner_col3 > h2 {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .banner_col3 > h3 {
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 15px;
+    width: 80%;
+  }
+  .rewards_hub {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 250px;
+  }
+
+  .rewards_hub > h1 {
+    width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .rewards_hub > h2 {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 10px;
+    width: 100%;
+  }
+  .landRewards_container {
+    height: 100%;
+    margin-bottom: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .landRewards_col1 > img,
+  .landRewards_col2 > img {
+    width: auto;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+
+  .landRewards_col1 > p,
+  .landRewards_col2 > p {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    max-width: 480px;
+  }
+  .landRewards_col1 {
+    margin-right: -0px;
+  }
+  .landRewards_col2 {
+    margin-top: 200px;
+  }
+  .landRewards_col3 {
+    position: absolute;
+    transform: rotate(90deg);
+    margin-top: -520px;
+    margin-left: -5px;
+  }
+  .landRewards_col3 > .landArrow {
+    width: 20%;
+  }
+  .landSignup_container {
+    margin-top: -650px;
+  }
+  .landSignup_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .landSignup_img {
+    height: 80%;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    object-position: left center;
+  }
+  .landSignup_contents > h1 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 350px;
+    margin-bottom: 0;
+  }
+
+  .landSignup_button {
+    height: 2.5rem;
+    font-size: 12px;
+    margin-left: -5px;
+    margin-bottom: 10px;
+  }
+  .landSignup_checkbox {
+    margin-left: 40px;
+    margin-top: 125px;
+  }
+  .signup_label {
+    font-size: 14px;
+  }
+
+  .login_label {
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: -80px;
+  }
+
+  .all_platforms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0px;
+    width: 100%;
+    height: max-content;
+    background: #3fa2f7;
+  }
+
+  .platform_icons {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .platform_col1,
+  .platform_col2 {
     margin-right: 0;
   }
 
@@ -1026,7 +1444,8 @@ span {
     background: #3fa2f7;
   }
 
-  .platform_col1, .platform_col2{
+  .platform_col1,
+  .platform_col2 {
     margin-right: 0;
   }
 

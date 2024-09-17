@@ -154,7 +154,7 @@ a {
     width: 160px; /* Adjust dropdown size */
   }
 }
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .footer_container {
     padding: 15px;
     height: auto; /* Adjust footer height for smaller screens */
@@ -177,17 +177,17 @@ a {
   .dropdown_container {
     margin-left: -20px;
   }
-  .language_col{
+  .language_col {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .footer_lang_label{
+  .footer_lang_label {
     font-size: 12px;
     margin-top: 0px;
   }
-  .dropdown_container > a{
+  .dropdown_container > a {
     font-size: 12px;
   }
 }
