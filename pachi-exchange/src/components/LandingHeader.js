@@ -32,10 +32,10 @@ function LandingHeader() {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
     transition: transform 0.3s ease;
     height: 100vh;
-    width: 250px;
+    width: 300px;
     text-align: left;
     padding: 2rem;
-    position: ${({ open }) => (open ? "fixed" : "absolute")};
+    position: ${({ open }) => (open ? "fixed" : "relative")};
     top: 0;
     right: 0;
     z-index: 1;
@@ -44,11 +44,11 @@ function LandingHeader() {
       height: 92px;
       background: #e4f1fd;
       .landingNav {
+        position: absolute;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        margin-right: 30px;
       }
     }
     @media (min-width: 481px) and (max-width: 768px) {
@@ -60,7 +60,7 @@ function LandingHeader() {
         background: #3f3f41;
         left: 0;
         margin-left: 0;
-        z-index:1000;
+        z-index: 1000;
       }
     }
     @media (min-width: 320px) and (max-width: 480px) {
@@ -105,7 +105,7 @@ function LandingHeader() {
     @media (min-width: 481px) and (max-width: 768px) {
       margin-right: -20px;
       margin-top: -5px;
-      z-index:100;
+      z-index: 100;
     }
     div {
       width: 2.5rem;
@@ -115,7 +115,7 @@ function LandingHeader() {
       transition: all 0.3s linear;
       position: relative;
       transform-origin: 1px;
-      z-index:1000;
+      z-index: 1000;
 
       :first-child {
         transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};

@@ -243,7 +243,7 @@
   font-style: bold;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1921px) {
   .carousel {
     display: flex;
     flex-direction: column-reverse;
@@ -256,11 +256,28 @@
     min-width: 1420px;
     height: auto;
   }
-}
-
-@media (min-width: 769px) and (max-width: 1920px) {
   .carousel_container > .carousel_mobile {
     display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1512px) {
+  .carousel_container > .carousel_mobile {
+    display: none;
+  }
+  .carousel {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: -10;
+    width: 95% !important;
+    height: auto;
+    min-width: 769px;
+    max-width: 1920px;
   }
 }
 
@@ -513,29 +530,29 @@
     max-width: 400px;
   }
   .backArrow,
-.forwardArrow,
-.backArrow:hover,
-.forwardArrow:hover {
-  position: absolute;
-  color: #3fa2f7;
-  font-size: 35px;
-  margin-top: -50px;
-  z-index: 1000;
-}
-.backArrow {
-  margin-right: 85px;
-  height: 40;
-  width: 40;
-  background: "none";
-  margin-top: -50px;
-}
-.forwardArrow {
-  margin-left: 85px;
-  height: 40;
-  width: 40;
-  background: "none";
-  margin-top: -50px;
-}
+  .forwardArrow,
+  .backArrow:hover,
+  .forwardArrow:hover {
+    position: absolute;
+    color: #3fa2f7;
+    font-size: 35px;
+    margin-top: -50px;
+    z-index: 1000;
+  }
+  .backArrow {
+    margin-right: 85px;
+    height: 40;
+    width: 40;
+    background: "none";
+    margin-top: -50px;
+  }
+  .forwardArrow {
+    margin-left: 85px;
+    height: 40;
+    width: 40;
+    background: "none";
+    margin-top: -50px;
+  }
 
   .carousel-indicators {
     margin-top: -20px;
@@ -727,7 +744,6 @@
     height: 399px;
   }
 }
-
 @media (max-width: 320px) {
   .carousel_container > .carousel,
   .carousel-control-prev,
@@ -749,5 +765,88 @@
     height: auto;
     width: 100%;
     max-width: 320px;
+  }
+
+  .carousel-indicators {
+    margin-top: -20px;
+    position: relative;
+  }
+  .download_button {
+    background: #297fca;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 422px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .exchanges_button {
+    height: 40px;
+    width: 156px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    color: #fff;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #297fca;
+    margin-bottom: 410px;
+  }
+  .draw_button {
+    height: 40px;
+    width: 145px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: #297fca;
+    margin-bottom: 17px;
+    margin-left: -5px;
+  }
+  .playPachi_button {
+    height: 40px;
+    width: 165px;
+    border-radius: 10px;
+    padding: 20px, 25px, 20px, 25px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: #297fca;
+    margin-bottom: 364px;
+  }
+  .mobileSlide1_img,
+  .mobileSlide2_img,
+  .mobileSlide3_img,
+  .mobileSlide4_img {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: 399px;
   }
 }
