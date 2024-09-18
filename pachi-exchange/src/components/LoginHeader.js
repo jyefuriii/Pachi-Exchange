@@ -35,10 +35,10 @@ function LoginHeader() {
     background: #3f3f41;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
     height: 100vh;
-    width: 250px;
+    width: 320px;
     text-align: left;
     padding: 2rem;
-    position: absolute;
+    position: ${({ open }) => (open ? "fixed" : "relative")};
     top: 0;
     right: 0;
     transition: transform 0.3s ease-in-out;
@@ -46,13 +46,13 @@ function LoginHeader() {
 
     @media (min-width: 769px) {
       height: 92px;
-      background: #e4f1fd;
+      background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
       .loginNav {
+        position: absolute;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        margin-right: 30px;
       }
     }
     @media (min-width: 481px) and (max-width: 768px) {
@@ -64,6 +64,7 @@ function LoginHeader() {
         background: #3f3f41;
         left: 0;
         margin-left: 0;
+        z-index: 1000;
       }
     }
     @media (min-width: 320px) and (max-width: 480px) {
@@ -107,8 +108,9 @@ function LoginHeader() {
     }
     @media (min-width: 481px) and (max-width: 768px) {
       margin-right: -20px;
+      margin-top: -5px;
+      z-index:100;
     }
-
     div {
       width: 2.5rem;
       height: 0.3rem;
@@ -117,6 +119,7 @@ function LoginHeader() {
       transition: all 0.3s linear;
       position: relative;
       transform-origin: 1px;
+      z-index:1000;
 
       :first-child {
         transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
@@ -145,13 +148,14 @@ function LoginHeader() {
   };
   return (
     <div className="loginHeader_container">
-          <div className="login_header" ref={node}>
-            <Link
-            className="landingPage_link"
-            to="/"
-            style={{ textDecoration: "none" }}>
-            <img className="pachi_logo" src={assets.pachi_logo} alt="" />
-            </Link>
+      <div className="login_header" ref={node}>
+        <Link
+          className="landingPage_link"
+          to="/"
+          style={{ textDecoration: "none" }}
+        >
+          <img className="pachi_logo" src={assets.pachi_logo} alt="" />
+        </Link>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>

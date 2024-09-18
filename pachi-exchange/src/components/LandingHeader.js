@@ -32,7 +32,7 @@ function LandingHeader() {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
     transition: transform 0.3s ease;
     height: 100vh;
-    width: 300px;
+    width: 320px;
     text-align: left;
     padding: 2rem;
     position: ${({ open }) => (open ? "fixed" : "relative")};
@@ -42,7 +42,7 @@ function LandingHeader() {
 
     @media (min-width: 769px) {
       height: 92px;
-      background: #e4f1fd;
+      background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
       .landingNav {
         position: absolute;
         display: flex;

@@ -1,5 +1,6 @@
 .loginHeader_container {
   width: 100%;
+  min-width: 100%;
   height: auto;
 }
 .login_header {
@@ -13,19 +14,20 @@
 }
 .pachi_logo {
   height: 52px;
-  width: 283px;
+  width: fit-content;
   margin-top: -37px;
   margin-left: -317px !important;
 }
 .loginNav {
-  margin: 0;
+  margin-left: 120px;
+  margin-top: -8px;
+  width: 100px;
 }
 .landingPage_link {
   margin-right: 50px;
   width: 0;
   height: 0;
   margin-left: 350px;
-  margin-right: 5000px;
 }
 .home_buttons {
   height: 23px;
@@ -40,7 +42,7 @@
   align-content: center;
   color: #297fca;
   border: none;
-  margin-left: 0px;
+  margin-left: 30px;
   margin-top: -15px;
 }
 .home_buttons:focus,
@@ -57,26 +59,19 @@
     max-width: 768px;
     height: auto;
   }
-
+  .landingPage_link > img {
+    height: 33px;
+    width: fit-content;
+    margin-right: 150px;
+    padding: 0;
+  }
   .loginNav {
-    display: block;
-    background: #3fa2f7;
-    width: 100%;
-    padding: 20px;
-    padding-top: 0;
-    height: fit-content;
-    flex-direction: column;
-    align-items: left;
-    align-content: left;
-    justify-content: flex-start;
-    position: relative;
-    margin-right: 0px;
-    right: 0;
-    top: -200px;
     float: none;
     z-index: 50;
     transition: ease;
-    margin-top: -150px;
+    margin-top: -450px;
+    width: 80px;
+    height: 40px;
   }
   .home_buttons {
     height: 23px;
@@ -100,7 +95,7 @@
     font-style: bold;
   }
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .loginHeader_container {
     width: 100%;
     min-width: 320px;
@@ -113,12 +108,66 @@
     min-width: 320px;
     max-width: 480px;
   }
-
-  .login_header > img {
+  .loginNav {
+    float: none;
+    z-index: 50;
+    transition: ease;
+    margin-top: 80px;
+    width: 80px;
+  }
+  .landingPage_link > img {
+    height: 33px;
+    width: fit-content;
+    margin-right: 150px;
+    padding: 0;
+  }
+  .home_buttons {
+    height: 23px;
+    width: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    border: none;
+    margin-top: -320px;
+    margin-left: 10px;
+  }
+  .home_buttons:focus,
+  .home_buttons:hover {
+    color: #3fa2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+}
+@media (max-width: 320px) {
+  .loginHeader_container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: auto;
+  }
+  .login_header {
+    height: 70px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+  .loginNav {
+    float: none;
+    z-index: 50;
+    width: 80px;
+    transition: ease;
+    margin-top: 80px;
+  }
+  .landingPage_link > img {
     height: 33px;
     width: 180px;
-    margin-top: 5px;
-    margin-left: 30px;
+    margin-right: 155px;
     padding: 0;
   }
   .home_buttons {

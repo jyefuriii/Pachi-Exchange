@@ -32,6 +32,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
   color: #fff;
+  margin-left: 30px;
   border: none;
 }
 .login_button:focus,
@@ -44,7 +45,7 @@
 }
 .login_link {
   width: 0;
-  margin-right: 730px;
+  margin-right: 230px;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -55,15 +56,17 @@
     max-width: 768px;
   }
   .landing_pachi_logo {
-    margin-left: 30px;
-    margin-top: 5px;
+    height: 33px;
+    width: fit-content;
+    margin-right: 150px;
+    padding: 0;
   }
   .landingNav {
     display: block;
     background: #3fa2f7;
     width: 100%;
-    padding: 20px;
-    height: fit-content;
+    padding: 0px;
+    height: 23px;
     flex-direction: column;
     align-items: left;
     align-content: left;
@@ -71,18 +74,18 @@
     position: relative;
     margin-right: 0px;
     right: 0;
-    top: -200px;
+    top: -250px;
     float: none;
     z-index: 1;
     transition: ease;
-    margin-top: -200px;
+    margin-top: -100px;
   }
   .login_button {
-    background: none;
+    background: none !important;
     height: 23px;
     width: fit-content;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 20px !important;
     font-style: normal;
     font-weight: 700;
     line-height: 23px;
@@ -91,7 +94,8 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-left: -20px;
+    margin-left: 0px;
+    margin-top: -10px;
   }
   .login_button:focus,
   .login_button:hover {
@@ -126,31 +130,28 @@
   }
 
   .landingNav {
-    display: block;
     background: #3fa2f7;
-    width: 100%;
+    width: 120px;
     padding: 20px;
     padding-top: 0;
-    height: fit-content;
+    height: 23px;
     flex-direction: column;
     align-items: left;
     align-content: left;
     justify-content: flex-start;
     position: relative;
-    margin-right: 0px;
     right: 0;
-    top: -200px;
     float: none;
     z-index: 50;
     transition: ease;
-    margin-top: -300px;
+    margin-top: -500px !important;
   }
   .login_button {
-    background: none;
+    background: none !important;
     height: 23px;
     width: 100%;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 20px !important;
     font-style: normal;
     font-weight: 700;
     line-height: 23px;
@@ -160,7 +161,7 @@
     color: #fff;
     border: none;
     margin-left: -20px;
-    margin-top: 50px;
+    margin-top: -20px;
   }
   .login_button:focus,
   .login_button:hover {
