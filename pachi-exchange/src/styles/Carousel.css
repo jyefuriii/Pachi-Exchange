@@ -1,5 +1,8 @@
 .carousel {
   display: flex;
+  width: 100%;
+  min-width: 1025px;
+  max-width: 1420px;
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +17,8 @@
 .slide4_img {
   display: block;
   width: 100%;
+  min-width: 1025px;
+  max-width: 1420px;
 }
 
 .backArrow,
@@ -43,6 +48,8 @@
 .carousel > img {
   height: auto;
   width: 100%;
+  min-width: 1025px;
+  max-width: 1420px;
 }
 .carousel-indicators > li {
   height: 10px;
@@ -253,7 +260,9 @@
     margin-left: auto;
     margin-right: auto;
     top: -70px;
-    min-width: 1420px;
+    width: 100%;
+    min-width: 950px;
+    max-width: 1420px;
     height: auto;
   }
   .carousel_container > .carousel_mobile {
@@ -261,7 +270,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1512px) {
+@media (min-width: 925px) and (max-width: 1024px) {
   .carousel_container > .carousel_mobile {
     display: none;
   }
@@ -279,9 +288,22 @@
     min-width: 769px;
     max-width: 1920px;
   }
+
+  .banner_head4 {
+    width: 700px;
+    font-family: Arial;
+    font-size: 46px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 0px;
+    margin-bottom: -20px;
+    text-align: center;
+    color: #297fca;
+  }
 }
 
-@media (min-width: 569px) and (max-width: 768px) {
+@media (min-width: 569px) and (max-width: 924px) {
   .carousel {
     display: flex;
     flex-direction: column-reverse;
