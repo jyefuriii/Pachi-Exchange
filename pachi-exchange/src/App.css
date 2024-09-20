@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 input[type="number"]::-webkit-inner-spin-button {
@@ -11,30 +13,4 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 10px;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .App {
-    text-align: center;
-    width: 100%;
-    min-width: 769px;
-    max-width: 1024px;
-    height: auto;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .App {
-    text-align: center;
-    width: 100%;
-    min-width: 481px;
-    max-width: 768px;
-    height: auto;
-  }
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .App {
-    text-align: center;
-    width: 100%;
-    min-width: 320px;
-    max-width: 480px;
-    height: auto;
-  }
-}
+

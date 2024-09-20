@@ -133,24 +133,24 @@ form > .forgot_pw {
   font-style: bold;
 }
 
-@media (min-width: 481px) and (max-width: 1227px) {
+@media (min-width: 481px) and (max-width: 830px) {
   .login_container {
     width: 100%;
     min-width: 481px;
-    max-width: 768px;
+    max-width: 100%;
     height: auto;
   }
   .login_banner {
     height: auto;
     width: 100%;
     min-width: 481px;
-    max-width: 768px;
+    max-width: 100%;
   }
   .login_img {
     height: auto;
     width: 100%;
     min-width: 481px;
-    max-width: 768px;
+    max-width: 100%;
     z-index: -1;
     position: relative;
     left: 0;
@@ -164,7 +164,7 @@ form > .forgot_pw {
     align-content: center;
     width: 100%;
     min-width: 481px;
-    max-width: 768px;
+    max-width: 100%;
     margin-top: 20px;
     margin-bottom: 270px;
   }
