@@ -5,7 +5,7 @@
   margin-bottom: 0 !important;
 }
 .login_banner {
-  height:100%;
+  height: 100%;
   width: 100%;
   background: transparent;
 }
@@ -132,7 +132,7 @@ form > .forgot_pw {
   color: #3fa2f7;
   font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
-}/* Custom styles for the close button */
+} /* Custom styles for the close button */
 .swalCloseButtonLP {
   position: absolute;
   top: 15px;
@@ -146,7 +146,24 @@ form > .forgot_pw {
 .swalCloseButtonLP:hover {
   color: #ff0000; /* Optional hover effect */
 }
+.swal2-container {
+  width: 100vw !important; /* Make the backdrop full width */
+  height: 100vh !important; /* Make the backdrop full height */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
 
+.swal2-backdrop {
+  position: fixed; /* Ensure it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the backdrop color */
+}
 
 @media (min-width: 481px) and (max-width: 768px) {
   .login_container {
