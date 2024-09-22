@@ -11,23 +11,27 @@ import * as assets from "../assets";
 function LandingPage() {
   const [checked, setChecked] = useState(false);
 
-  const notChecked = () => {
-    if (!checked) {
-      Swal.fire({
-        showCloseButton: true,
-        closeButtonText: "X",
-        title: "Required Field",
-        showConfirmButton: false,
-        html: `<span style="color: #3fa2f7; background: #fff; font-size: 18px;">
-          Please confirm if you are 18 years old and above to signup.
+const notChecked = () => {
+  if (!checked) {
+    Swal.fire({
+      showCloseButton: true,
+      closeButtonText: "X",
+      title: "Required Field",
+      showConfirmButton: false,
+      html: `
+        <span class="swal-responsive-text" style="color: #3fa2f7; background: #fff;">
+          Please confirm if you are 18 years old and above to sign up.
         </span>`,
-        customClass: {
-          closeButton: "swalCloseButton",
-          title: "swalTitle",
-        },
-      });
-    }
-  };
+      customClass: {
+        popup: "custom-swal-widthLP", // Apply custom class for width
+        closeButton: "swalCloseButtonLP",
+        title: "swalTitle",
+      },
+      width: "90%", // Base width to make it responsive
+    });
+  }
+};
+
 
   return (
     <div className="landingPage">
@@ -152,7 +156,6 @@ function LandingPage() {
           <Link className="signup_link" to={checked ? "./Signup" : "/"}>
             <button
               type="submit"
-              disabled={!checked}
               className="landSignup_button"
               onClick={notChecked}
             >

@@ -18,7 +18,6 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import * as assets from "../assets";
 
-
 function CreateAccount() {
   const history = useHistory();
   const [gender, setGender] = useState("");
@@ -55,13 +54,15 @@ function CreateAccount() {
         showCloseButton: true,
         closeButtonText: "X",
         background: "#fff",
-        title: "Required Field  ",
+        title: "Required Field",
         showConfirmButton: false,
-        html: `<span style="color: #3fa2f7; background: #fff; font-size: 18px;">
-            Please confirm if you are 18 years old and above and to signup.
-          </span>`,
+        html: `
+        <span class="swal-responsive-text" style="color: #3fa2f7; background: #fff;">
+          Please confirm if you are 18 years old and above to sign up.
+        </span>`,
         customClass: {
-          closeButton: "swalCloseButton",
+          popup: "custom-swal-widthSP", // Apply custom class for width
+          closeButton: "swalCloseButtonLP",
           title: "swalTitle",
         },
       });
@@ -71,11 +72,13 @@ function CreateAccount() {
         closeButtonText: "X",
         title: "Required Field",
         showConfirmButton: false,
-        html: `<span style="color: #3fa2f7; background: #fff; font-size: 18px;">
-        Please confirm if you understand and agree about the real prize competitions and its exceptions
-      </span>`,
+        html: `
+        <span class="swal-responsive-text" style="color: #3fa2f7; background: #fff;">
+          Please confirm if you understand and agree about the real prize competitions and its exceptions.
+        </span>`,
         customClass: {
-          closeButton: "swalCloseButton",
+          popup: "custom-swal-widthSP", // Apply custom class for width
+          closeButton: "swalCloseButtonLP",
           title: "swalTitle",
         },
       });
@@ -100,22 +103,20 @@ function CreateAccount() {
         };
 
         await axios.post("http://localhost:8001/auth/", registerData);
-        //await axios.post(
-        //"https://mern-auth-template-tutorial.herokuapp.com/auth/",
-        //registerData
-        //);
         history.push("/AccountCreated");
       } catch (err) {
         Swal.fire({
           showCloseButton: true,
           closeButtonText: "X",
-          title: "Required Field",
+          title: "Error",
           showConfirmButton: false,
-          html: `<span style="color: #3fa2f7; background: #fff; font-size: 18px;">
-          ${err.response.data.errorMessage}
-        </span>`,
+          html: `
+          <span class="swal-responsive-text" style="color: #3fa2f7; background: #fff;">
+            ${err.response.data.errorMessage}
+          </span>`,
           customClass: {
-            closeButton: "swalCloseButton",
+            popup: "custom-swal-widthSP", // Apply custom class for width
+            closeButton: "swalCloseButtonLP",
             title: "swalTitle",
           },
         });
@@ -237,7 +238,9 @@ function CreateAccount() {
                   type="email"
                   className="email_input"
                   placeholder="Email"
-                  onChange={(e) => setEmailAddress(e.target.value.toLowerCase())}
+                  onChange={(e) =>
+                    setEmailAddress(e.target.value.toLowerCase())
+                  }
                   value={emailAddress}
                 />
                 <label className="email_label">Email</label>

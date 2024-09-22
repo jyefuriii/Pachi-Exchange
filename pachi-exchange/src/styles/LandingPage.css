@@ -365,6 +365,25 @@
   margin-top: 150px;
   margin-left: -10px;
 }
+.custom-swal-widthLP {
+  max-width: 600px !important; /* Limit the width for larger screens */
+  width: 100% !important; /* Full width for smaller screens */
+}
+/* Custom styles for the close button */
+.swalCloseButtonLP {
+  position: absolute;
+  top: 15px; /* Adjust as necessary */
+  right: 15px; /* Adjust as necessary */
+  font-size: 18px; /* Adjust size */
+  color: #3fa2f7; /* Color of the button */
+  background-color: transparent; /* Ensure background is transparent */
+  border: none; /* Remove border */
+}
+
+.swalCloseButtonLP:hover {
+  color: #ff0000; /* Hover effect if needed */
+}
+
 .signup_check {
   height: 19px;
   width: 19px;

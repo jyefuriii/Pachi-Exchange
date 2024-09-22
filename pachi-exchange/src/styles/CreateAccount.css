@@ -68,6 +68,7 @@ select:focus {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
   height: fit-content;
   width: 100%;
 }
@@ -75,12 +76,16 @@ select:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   align-content: center;
   width: 100%;
   height: auto;
 }
 .account_head {
   background: #fff;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
   width: 100%;
   padding-top: 100px;
   align-content: center;
@@ -92,7 +97,7 @@ select:focus {
 
 .account_head > h1 {
   height: 60px;
-  width: 575px;
+  width: 100%;
   font-family: Arial;
   justify-content: center;
   align-items: center;
@@ -477,24 +482,43 @@ select:focus {
   color: #297fca;
 }
 
-.swalCloseButton {
-  background-color: #51abfa;
-  border-radius: 50%;
-  color: #fff;
-  height: 35px;
-  width: 35px;
-  padding-bottom: 3px;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-.swalCloseButton:hover {
-  background-color: #3fa2f7;
-  border-radius: 50%;
-  color: #e4f1fd;
-  margin-right: 10px;
-  margin-top: 10px;
+.custom-swal-widthSP {
+  max-width: 600px !important; /* Limit the width for larger screens */
+  width: 100% !important; /* Full width for smaller screens */
 }
 
+/* Custom styles for the close button */
+.swalCloseButtonLP {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 18px;
+  color: #3fa2f7;
+  background-color: transparent;
+  border: none;
+}
+
+.swalCloseButtonLP:hover {
+  color: #ff0000; /* Optional hover effect */
+}
+.swal2-container {
+  width: 100vw !important; /* Make the backdrop full width */
+  height: 100vh !important; /* Make the backdrop full height */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.swal2-backdrop {
+  position: fixed; /* Ensure it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the backdrop color */
+}
 @media (min-width: 481px) and (max-width: 768px) {
   select::placeholder {
     height: 19px;
@@ -943,6 +967,11 @@ select:focus {
     margin-bottom: 100px;
     margin-left: 0px !important;
   }
+  .custom-swal-widthSP {
+    max-width: 460px !important;
+    width: 100% !important; /* Full width for smaller screens */
+    margin: 0 auto !important;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   select::placeholder {
@@ -1389,5 +1418,10 @@ select:focus {
     margin-top: -30px;
     margin-bottom: 100px;
     margin-left: 0px !important;
+  }
+  .custom-swal-widthSP {
+    max-width: 300px !important;
+    width: 100% !important; /* Full width for smaller screens */
+    margin: 0 auto !important;
   }
 }
