@@ -48,7 +48,7 @@ function Login() {
         ${err.response.data.errorMessage}
       </span>`,
         customClass: {
-          closeButton: "swalCloseButton",
+          closeButton: "swalCloseButtonLP",
           title: "swalTitle",
         },
       });

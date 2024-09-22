@@ -127,8 +127,6 @@ function CreateAccount() {
   return (
     <div className="account_mainContainer">
       <LoginHeader />
-      <div className="account_container">
-        <div className="account_contents">
           <div className="account_head">
             <h1>CREATE MY ACCOUNT</h1>
             <h3>
@@ -136,6 +134,8 @@ function CreateAccount() {
               Pachi+ account.
             </h3>
           </div>
+      <div className="account_container">
+        <div className="account_contents">
           <form onSubmit={register}>
             <div className="account_form">
               <div className="account_personal">
