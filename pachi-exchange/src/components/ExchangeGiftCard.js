@@ -3,6 +3,7 @@ import "../styles/ExchangeGiftCard.css";
 import HomeHeader from "../components/HomeHeader";
 import Footer from "../components/Footer";
 import GiftCardStepsThree from "../components/GiftCardStepsThree";
+import * as assets from "../assets"
 
 function ExchangeGiftCard() {
   return (
@@ -17,7 +18,7 @@ function ExchangeGiftCard() {
           <div className="playGame_container">
             <img
               className="playGame_img"
-              src="./play_game_browser.png"
+              src={assets.playGameImage}
               alt=""
             />
             <a

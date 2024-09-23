@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   min-width: 100%;
-  max-width: 1420px;
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +16,6 @@
 .slide4_img {
   display: block;
   width: 100%;
-  max-width: 1420px;
 }
 .slide3_img {
   display: block;
