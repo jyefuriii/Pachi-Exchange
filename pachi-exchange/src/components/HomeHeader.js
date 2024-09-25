@@ -104,7 +104,7 @@ function HomeHeader() {
 const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
   background: #3f3f41;
@@ -116,23 +116,66 @@ const StyledMenu = styled.nav`
   top: 0;
   right: 0;
   z-index: 1;
+  padding-top: 100px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 900px) {
     height: 92px;
-    width: 100%;
-    background: #e4f1fd;
-    position: relative;
-    transform: none;
-    flex-direction: row;
-    justify-content: space-between;
+    top: 0;
+    background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
+    .pageNav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0 30px;
+      margin-right: -130px;
+      margin-top: -108px;
+    }
+    .account_name {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 899px) {
+    margin-right: 0px;
+    opacity: 95%;
+    background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
+    .pageNav {
+      display: ${({ open }) => (open ? "block" : "none")};
+      background: #3f3f41;
+    }
+    .logout_button {
+      height: 40px;
+      margin-left: 5px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-right: 0px;
+    opacity: 95%;
+    background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
+    .pageNav {
+      display: ${({ open }) => (open ? "block" : "none")};
+      background: #3f3f41;
+      
+    }
+    .logout_button {
+      height: 40px;
+      margin-left: 5px;
+    }
   }
 `;
 
 const StyledBurger = styled.button`
   position: ${({ open }) => (open ? "fixed" : "absolute")};
   top: 1.8rem;
-  right: 2rem;
+  right: 3rem;
   display: flex;
+  margin-top: -15px;
   flex-direction: column;
   justify-content: space-around;
   width: 2.5rem;
@@ -140,14 +183,25 @@ const StyledBurger = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 20;
+  padding: 0;
+  z-index: 10;
 
   &:focus {
     outline: none;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 900px) {
     display: none;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-right: -20px;
+    margin-top: -10px;
+  }
+
+  @media (min-width: 481px) and (max-width: 899px) {
+    margin-right: -20px;
+    margin-top: -10px;
   }
 
   div {
