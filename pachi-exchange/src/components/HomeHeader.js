@@ -119,57 +119,20 @@ const StyledMenu = styled.nav`
 
   @media (min-width: 769px) {
     height: 92px;
+    width: 100%;
     background: #e4f1fd;
-    .pageNav {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-      margin-right: 30px;
-      margin-top: 20px;
-    }
-    .home_avatar {
-      margin-right: -10px;
-      margin-left: 140px;
-      margin-top: -60px;
-    }
-  }
-
-  @media (min-width: 481px) and (max-width: 768px) {
-    margin-right: 0px;
-    opacity: 95%;
-    background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
-    .pageNav {
-      display: ${({ open }) => (open ? "block" : "none")};
-      background: #3f3f41;
-    }
-    .home_avatar {
-      margin-right: 0px;
-      margin-left: 120px;
-      padding-left: 20px;
-      margin-top: -100px;
-    }
-  }
-
-  @media (min-width: 320px) and (max-width: 480px) {
-    margin-right: 0px;
-    opacity: 95%;
-    background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
-    .pageNav {
-      display: ${({ open }) => (open ? "block" : "none")};
-      background: #3f3f41;
-      left: 0;
-      margin-left: 0;
-    }
+    position: relative;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
 const StyledBurger = styled.button`
   position: ${({ open }) => (open ? "fixed" : "absolute")};
   top: 1.8rem;
-  right: 3rem;
+  right: 2rem;
   display: flex;
-  margin-top: -15px;
   flex-direction: column;
   justify-content: space-around;
   width: 2.5rem;
@@ -177,8 +140,7 @@ const StyledBurger = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
-  z-index: 10;
+  z-index: 20;
 
   &:focus {
     outline: none;
@@ -186,14 +148,6 @@ const StyledBurger = styled.button`
 
   @media (min-width: 769px) {
     display: none;
-  }
-
-  @media (min-width: 320px) and (max-width: 480px) {
-    margin-right: -20px;
-  }
-
-  @media (min-width: 481px) and (max-width: 768px) {
-    margin-right: -20px;
   }
 
   div {
