@@ -41,7 +41,7 @@ function ShopPagination() {
 
   //choose the screen size
   const handleResize = () => {
-    if (window.innerWidth < 481) {
+      if (window.innerWidth < 769) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
