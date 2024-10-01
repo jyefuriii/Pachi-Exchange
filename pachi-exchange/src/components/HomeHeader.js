@@ -118,7 +118,7 @@ const StyledMenu = styled.nav`
   z-index: 1;
   padding-top: 100px;
 
-  @media (min-width: 900px) {
+  @media (min-width: 950px) {
     height: 92px;
     top: 0;
     background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
@@ -128,7 +128,7 @@ const StyledMenu = styled.nav`
       align-items: center;
       justify-content: space-evenly;
       padding: 0 30px;
-      margin-right: -130px;
+      margin-right: -115px;
       margin-top: -108px;
     }
     .account_name {
@@ -161,7 +161,6 @@ const StyledMenu = styled.nav`
     .pageNav {
       display: ${({ open }) => (open ? "block" : "none")};
       background: #3f3f41;
-      
     }
     .logout_button {
       height: 40px;
