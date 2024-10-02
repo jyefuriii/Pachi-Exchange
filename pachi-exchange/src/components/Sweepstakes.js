@@ -10,19 +10,29 @@ function Sweepstakes() {
   const now = new Date();
   const [monthNumber, setMonthNumber] = useState(30);
   const monthIndex = now.getMonth();
-  const monthDays = () => {
-    if (
-      monthIndex === 4 ||
-      monthIndex === 6 ||
-      monthIndex === 9 ||
-      monthIndex === 11
-    )
-      return setMonthNumber(29);
-    if (monthIndex === 1) return setMonthNumber(27);
+
+  // Function to check leap year
+  const isLeapYear = (year) => {
+    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
   };
 
+  // Set the correct number of days for the month
+  useEffect(() => {
+    const monthDays = () => {
+      if ([4, 6, 9, 11].includes(monthIndex)) {
+        setMonthNumber(30); // Months with 30 days
+      } else if (monthIndex === 1) {
+        // February
+        setMonthNumber(isLeapYear(now.getFullYear()) ? 29 : 28);
+      } else {
+        setMonthNumber(31); // Months with 31 days
+      }
+    };
+    monthDays();
+  }, [monthIndex, now]); // Dependency array includes `now` to capture the year
+
   // Daily timer
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = (now) => {
     const start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     start.setHours(12, 0, 0); // 12pm
 
@@ -34,17 +44,25 @@ function Sweepstakes() {
 
     if (difference > 0) {
       timeLeft = {
-        Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        Hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        Mins: Math.floor((difference / 1000 / 60) % 60),
-        Sec: Math.floor((difference / 1000) % 60),
+        Days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(
+          2,
+          "0"
+        ),
+        Hours: String(
+          Math.floor((difference / (1000 * 60 * 60)) % 24)
+        ).padStart(2, "0"),
+        Mins: String(Math.floor((difference / 1000 / 60) % 60)).padStart(
+          2,
+          "0"
+        ),
+        Sec: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
       };
     }
     return timeLeft;
   };
 
-  // Weekly Timer
-  const calculateWeeklyTimeLeft = () => {
+  // Weekly timer
+  const calculateWeeklyTimeLeft = (now) => {
     const weeklyStart = new Date(
       now.getFullYear(),
       now.getMonth(),
@@ -53,7 +71,6 @@ function Sweepstakes() {
     weeklyStart.setHours(12, 0, 0); // 12pm
 
     if (now > weeklyStart) {
-      // too late, go to tomorrow
       weeklyStart.setDate(weeklyStart.getDate() + 7);
     }
     const weeklyDifference = new Date(weeklyStart) - new Date(now);
@@ -61,24 +78,32 @@ function Sweepstakes() {
 
     if (weeklyDifference > 0) {
       weeklyTimeLeft = {
-        Days: Math.floor(weeklyDifference / (1000 * 60 * 60 * 24)),
-        Hours: Math.floor((weeklyDifference / (1000 * 60 * 60)) % 24),
-        Mins: Math.floor((weeklyDifference / 1000 / 60) % 60),
-        Sec: Math.floor((weeklyDifference / 1000) % 60),
+        Days: String(
+          Math.floor(weeklyDifference / (1000 * 60 * 60 * 24))
+        ).padStart(2, "0"),
+        Hours: String(
+          Math.floor((weeklyDifference / (1000 * 60 * 60)) % 24)
+        ).padStart(2, "0"),
+        Mins: String(Math.floor((weeklyDifference / 1000 / 60) % 60)).padStart(
+          2,
+          "0"
+        ),
+        Sec: String(Math.floor((weeklyDifference / 1000) % 60)).padStart(
+          2,
+          "0"
+        ),
       };
     }
 
     return weeklyTimeLeft;
   };
 
-  // Monthly Timer
-  const calculateMonthlyTimeLeft = () => {
-    monthDays();
+  // Monthly timer
+  const calculateMonthlyTimeLeft = (now, monthNumber) => {
     const monthlyStart = new Date(now.getFullYear(), now.getMonth(), 1);
     monthlyStart.setHours(12, 0, 0); // 12pm
 
     if (now > monthlyStart) {
-      // too late, go to tomorrow
       monthlyStart.setDate(monthlyStart.getDate() + Number(monthNumber));
     }
     const monthlyDifference = new Date(monthlyStart) - new Date(now);
@@ -86,43 +111,54 @@ function Sweepstakes() {
 
     if (monthlyDifference > 0) {
       monthlyTimeLeft = {
-        Days: Math.floor(monthlyDifference / (1000 * 60 * 60 * 24)),
-        Hours: Math.floor((monthlyDifference / (1000 * 60 * 60)) % 24),
-        Mins: Math.floor((monthlyDifference / 1000 / 60) % 60),
-        Sec: Math.floor((monthlyDifference / 1000) % 60),
+        Days: String(
+          Math.floor(monthlyDifference / (1000 * 60 * 60 * 24))
+        ).padStart(2, "0"),
+        Hours: String(
+          Math.floor((monthlyDifference / (1000 * 60 * 60)) % 24)
+        ).padStart(2, "0"),
+        Mins: String(Math.floor((monthlyDifference / 1000 / 60) % 60)).padStart(
+          2,
+          "0"
+        ),
+        Sec: String(Math.floor((monthlyDifference / 1000) % 60)).padStart(
+          2,
+          "0"
+        ),
       };
     }
 
     return monthlyTimeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  // Initialize timers
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(now));
   const [weeklyTimeLeft, setWeeklyTimeLeft] = useState(
-    calculateWeeklyTimeLeft()
+    calculateWeeklyTimeLeft(now)
   );
   const [monthlyTimeLeft, setMonthlyTimeLeft] = useState(
-    calculateMonthlyTimeLeft()
+    calculateMonthlyTimeLeft(now, monthNumber)
   );
 
+  // Update timers every second
   useEffect(() => {
-    var time = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
-      setWeeklyTimeLeft(calculateWeeklyTimeLeft());
-      setMonthlyTimeLeft(calculateMonthlyTimeLeft());
+    const time = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft(now));
+      setWeeklyTimeLeft(calculateWeeklyTimeLeft(now));
+      setMonthlyTimeLeft(calculateMonthlyTimeLeft(now, monthNumber));
     }, 999);
+
     return () => clearTimeout(time);
-  });
+  }, [now, monthNumber]);
 
   const timerComponents = [];
   const weeklyTimerComponents = [];
   const monthlyTimerComponents = [];
 
   Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    } else {
+    if (timeLeft[interval]) {
       timerComponents.push(
-        <div className="timer" key={timeLeft}>
+        <div className="timer" key={interval}>
           <h4>{timeLeft[interval]}</h4>
           <h6>{interval}</h6>
         </div>
@@ -131,11 +167,9 @@ function Sweepstakes() {
   });
 
   Object.keys(weeklyTimeLeft).forEach((interval) => {
-    if (!weeklyTimeLeft[interval]) {
-      return;
-    } else {
+    if (weeklyTimeLeft[interval]) {
       weeklyTimerComponents.push(
-        <div className="timer" key={weeklyTimeLeft}>
+        <div className="timer" key={interval}>
           <h4>{weeklyTimeLeft[interval]}</h4>
           <h6>{interval}</h6>
         </div>
@@ -144,11 +178,9 @@ function Sweepstakes() {
   });
 
   Object.keys(monthlyTimeLeft).forEach((interval) => {
-    if (!monthlyTimeLeft[interval]) {
-      return;
-    } else {
+    if (monthlyTimeLeft[interval]) {
       monthlyTimerComponents.push(
-        <div className="timer" key={monthlyTimeLeft}>
+        <div className="timer" key={interval}>
           <h4>{monthlyTimeLeft[interval]}</h4>
           <h6>{interval}</h6>
         </div>

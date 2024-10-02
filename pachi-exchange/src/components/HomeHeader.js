@@ -140,7 +140,7 @@ const StyledMenu = styled.nav`
     }
   }
 
-  @media (min-width: 481px) and (max-width: 899px) {
+  @media (min-width: 481px) and (max-width: 949px) {
     margin-right: 0px;
     opacity: 95%;
     background: ${({ open }) => (open ? "#3F3F41" : "transparent")};
@@ -150,7 +150,10 @@ const StyledMenu = styled.nav`
     }
     .logout_button {
       height: 40px;
-      margin-left: 5px;
+      margin-left: 10px;
+    }
+    .account_name {
+      padding-left: 0px;
     }
   }
 
@@ -189,7 +192,7 @@ const StyledBurger = styled.button`
     outline: none;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 950px) {
     display: none;
   }
 
@@ -198,7 +201,7 @@ const StyledBurger = styled.button`
     margin-top: -10px;
   }
 
-  @media (min-width: 481px) and (max-width: 899px) {
+  @media (min-width: 481px) and (max-width: 949px) {
     margin-right: -20px;
     margin-top: -10px;
   }

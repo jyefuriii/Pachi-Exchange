@@ -10,26 +10,6 @@ import * as assets from "../assets"; // Import all assets from index.js
 function DailyDraw() {
   const [users, setUsers] = useState([]);
   const [drawType, setDrawType] = useState([]);
-  /*const now = new Date();
-  const dailyDrawDate = new Date();
-  dailyDrawDate.setHours(12, 0, 0); // 12pm
-
-  if (now > dailyDrawDate) {
-    dailyDrawDate.setDate(dailyDrawDate.getDate() + 1);
-    dailyDrawDate.setHours(12, 0, 0);
-  }
-  const options = {
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    timeZone: "Asia/Manila",
-    hour12: false,
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  };
-  const drawDate = dailyDrawDate.toLocaleDateString("en-PH", options);
-  dailyDrawDate.toLocaleTimeString("en-PH", options);*/
 
   async function getUsers() {
     const usersRes = await axios.get("http://localhost:8001/auth/login");
