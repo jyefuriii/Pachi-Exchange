@@ -1,6 +1,7 @@
 .sweepstakesPage {
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 .sweepstakesBackground {
   width: 100%;
@@ -354,14 +355,14 @@
     max-width: 1200px;
     height: auto;
   }
-  
+
   .sweepstakesMobileBackground {
     display: none;
     width: 100%;
     min-width: 481px;
     max-width: 1200px;
     height: auto;
-    object-fit:contain;
+    object-fit: contain;
   }
 
   .sweepstakesHeader_bg {

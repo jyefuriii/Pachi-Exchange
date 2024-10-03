@@ -6,6 +6,7 @@
   justify-content: center;
   align-content: center;
   height: fit-content;
+  overflow-x: hidden;
 }
 
 .dailyDraw_container {

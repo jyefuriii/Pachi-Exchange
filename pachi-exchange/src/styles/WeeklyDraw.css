@@ -6,7 +6,7 @@
   justify-content: center;
   align-content: center;
   height: fit-content;
-  min-width: 1280px;
+  overflow-x: hidden;
 }
 .weeklyDraw_container {
   display: flex;
@@ -15,6 +15,7 @@
   align-content: center;
   width: auto;
   height: auto;
+  overflow-x: hidden;
 }
 .weeklyDraw_head {
   background: #fff;

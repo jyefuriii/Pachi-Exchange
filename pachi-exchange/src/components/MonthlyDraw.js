@@ -23,7 +23,7 @@ function MonthlyDraw() {
   useEffect(() => {
     getUsers();
     getDrawType();
-  }, []);
+  }, [users, drawType]);
 
   async function updateTickets() {
     const newTickets =
@@ -209,14 +209,18 @@ function MonthlyDraw() {
         title: `<img src="${assets.pachi_logo}" alt=""/>`,
         showConfirmButton: false,
         html: `<div style="position: relative;">
-          <div style="position: relative; z-index: 1; padding: 20px;">
+          <div style="position: relative; z-index: 1; padding: 50px;">
+            <span style="color: #3fa2f7; background: none; font-weight:550; font-size: 24px; line-height: 22px;">
             <span style="color: #3fa2f7; background: none; font-weight:550; font-size: 26px; line-height: 32px;">
-              ${error.response.data.errorMessage}
+            ${error.response.data.errorMessage}</span>
+                </div>
+              </div>
             </span>
           </div>
         </div>`,
         customClass: {
           popup: "swalBackground",
+          container: "swalContainer",
           closeButton: "swalCloseButton",
           title: "swalTitle1",
         },
@@ -230,16 +234,72 @@ function MonthlyDraw() {
   }
 
   return (
-    <div className="MonthlyDraw">
+    <div className="monthlyDraw_mainContainer">
       <HomeHeader />
-      <div className="MonthlyDraw__content">
-        <h1>Monthly Draw</h1>
-        <p>
-          Join our monthly draw to win amazing prizes! Each ticket costs
-          <strong> {drawType.lotteryTicket}</strong> tickets.
-        </p>
-        <button onClick={addDrawEntry}>Enter Monthly Draw</button>
-        <button onClick={addFreeEntry}>Get Free Entry</button>
+      <div className="monthlyDraw_container">
+        <div className="monthlyDraw_contents">
+          <div className="monthlyDraw_head">
+            <h1>SWEEPSTAKES ENTRY</h1>
+            <h3>
+              THANK YOU FOR LOGGING IN TODAY, YOU HAVE 1 FREE ENTRY TO A DRAW OF
+              YOUR CHOICE
+            </h3>
+          </div>
+        </div>
+        <div className="drawEntry_container">
+          <div className="drawEntry_header">
+            <h2>MONTHLY DRAW</h2>
+            <div className="monthlyDraw_rewards">
+              <span>REWARD(USD):</span>
+              <span>50.00 USD</span>
+            </div>
+          </div>
+          <div className="monthlyEntry_contents">
+            <div className="monthlyEntry_image">
+              <img src={assets.monthlyDrawTicket} alt="" />
+            </div>
+            <div className="monthlyDraw_col2">
+              <div className="monthlyEntryInput_quantity">
+                <label>QTY:</label>
+                <input
+                  type="number"
+                  placeholder=""
+                  min="1"
+                  max="1"
+                  value={drawType.count}
+                                  style={{ width: "148px" }}
+                                  readOnly
+                />
+              </div>
+              <div className="monthlyEntryInput_tickets">
+                <label>TICKET COST:</label>
+                <input
+                  type="text"
+                  placeholder=""
+                  value={drawType.lotteryTicket}
+                                  style={{ width: "148px" }}
+                                  readOnly
+                />
+              </div>
+              <div className="drawButton_container">
+                <button className="monthlyEntry_button" onClick={addDrawEntry}>
+                  EXCHANGE
+                </button>
+                <button className="monthlyFree_button" onClick={addFreeEntry}>
+                  USE MY FREE ENTRY
+                </button>
+              </div>
+              <div className="weeklyDraw_span">
+                <span>
+                  View my sweepstake entries in
+                  <a className="drawAccount_link" href="/MyAccount">
+                    My Account
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
