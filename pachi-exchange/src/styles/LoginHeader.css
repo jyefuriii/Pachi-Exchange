@@ -42,7 +42,7 @@
   align-content: center;
   color: #297fca;
   border: none;
-  margin-left: 30px;
+  margin-left: -110px;
   margin-top: -15px;
 }
 .home_buttons:focus,
@@ -86,7 +86,8 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-top: -70px;
+    margin-top: 0px;
+    margin-left: 10px;
   }
   .home_buttons:focus,
   .home_buttons:hover {
@@ -95,25 +96,35 @@
     font-style: bold;
   }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .loginHeader_container {
     width: 100%;
-    min-width: 320px;
-    max-width: 480px;
+    min-width: 320px !important;
+    max-width: 480px !important;
     height: auto;
   }
   .login_header {
     height: 70px;
     width: 100%;
-    min-width: 320px;
-    max-width: 480px;
+    min-width: 320px !important;
+    max-width: 480px !important;
   }
   .loginNav {
+    background: #3fa2f7;
+    width: 120px;
+    padding: 20px;
+    padding-top: 0;
+    height: 23px;
+    flex-direction: column;
+    align-items: left;
+    align-content: left;
+    justify-content: flex-start;
+    position: relative;
+    right: 0;
     float: none;
     z-index: 50;
     transition: ease;
-    margin-top: 80px;
-    width: 80px;
+    margin-top: 100px !important;
   }
   .landingPage_link > img {
     height: 33px;
@@ -134,56 +145,8 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-top: -370px;
-  }
-  .home_buttons:focus,
-  .home_buttons:hover {
-    color: #3fa2f7;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: bold;
-  }
-}
-@media (max-width: 320px) {
-  .loginHeader_container {
-    width: 100%;
-    min-width: 320px;
-    max-width: 480px;
-    height: auto;
-  }
-  .login_header {
-    height: 70px;
-    width: 100%;
-    min-width: 320px;
-    max-width: 480px;
-  }
-  .loginNav {
-    float: none;
-    z-index: 50;
-    width: 80px;
-    transition: ease;
-    margin-top: 80px;
-  }
-  .landingPage_link > img {
-    height: 33px;
-    width: 180px;
-    margin-right: 155px;
-    padding: 0;
-  }
-  .home_buttons {
-    height: 23px;
-    width: 50px;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 23px;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    color: #fff;
-    border: none;
-    margin-top: -320px;
-    margin-left: 10px;
+    margin-top: -300px;
+    margin-left: 0px;
   }
   .home_buttons:focus,
   .home_buttons:hover {

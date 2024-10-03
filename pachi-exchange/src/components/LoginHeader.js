@@ -34,11 +34,11 @@ function LoginHeader() {
     justify-content: center;
     background: #3f3f41;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
-    height: 100vh;
-    width: 320px;
+    height: 100%;
+    width: 250px;
     text-align: left;
     padding: 2rem;
-    position: ${({ open }) => (open ? "fixed" : "relative")};
+    position: ${({ open }) => (open ? "fixed" : "absolute")};
     top: 0;
     right: 0;
     transition: transform 0.3s ease-in-out;
@@ -81,7 +81,7 @@ function LoginHeader() {
   `;
 
   const StyledBurger = styled.button`
-    position: absolute;
+    position: ${({ open }) => (open ? "fixed" : "absolute")};
     top: 1.8rem;
     right: 3rem;
     display: flex;
@@ -109,7 +109,7 @@ function LoginHeader() {
     @media (min-width: 481px) and (max-width: 768px) {
       margin-right: -20px;
       margin-top: -5px;
-      z-index:100;
+      z-index: 100;
     }
     div {
       width: 2.5rem;
@@ -119,7 +119,7 @@ function LoginHeader() {
       transition: all 0.3s linear;
       position: relative;
       transform-origin: 1px;
-      z-index:1000;
+      z-index: 1000;
 
       :first-child {
         transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};

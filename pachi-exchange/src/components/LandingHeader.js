@@ -30,14 +30,14 @@ function LandingHeader() {
     justify-content: center;
     background: #3f3f41;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
-    transition: transform 0.3s ease;
     height: 100vh;
-    width: 320px;
+    width: 250px;
     text-align: left;
     padding: 2rem;
     position: ${({ open }) => (open ? "fixed" : "relative")};
     top: 0;
     right: 0;
+    transition: transform 0.3s ease-in-out;
     z-index: 1;
 
     @media (min-width: 769px) {

@@ -159,8 +159,8 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-left: -20px;
-    margin-top: -20px;
+    margin-left: 0px;
+    margin-top: -70px;
   }
   .login_button:focus,
   .login_button:hover {
