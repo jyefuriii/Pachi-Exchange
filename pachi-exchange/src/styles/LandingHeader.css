@@ -58,7 +58,7 @@
   .landing_pachi_logo {
     height: 33px;
     width: fit-content;
-    margin-right: 150px;
+    margin-left: 30px;
     padding: 0;
   }
   .landingNav {
@@ -94,8 +94,7 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-left: 0px;
-    margin-top: -10px;
+    margin-left: 10px;
   }
   .login_button:focus,
   .login_button:hover {

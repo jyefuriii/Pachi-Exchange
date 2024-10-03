@@ -86,7 +86,7 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-left: 10px;
+    margin-top: -70px;
   }
   .home_buttons:focus,
   .home_buttons:hover {
@@ -134,8 +134,7 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-top: -320px;
-    margin-left: 10px;
+    margin-top: -370px;
   }
   .home_buttons:focus,
   .home_buttons:hover {
