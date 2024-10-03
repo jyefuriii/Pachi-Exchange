@@ -32,7 +32,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
   color: #fff;
-  margin-left: 30px;
+  margin-left: -100px;
   border: none;
 }
 .login_button:focus,
@@ -95,6 +95,8 @@
     color: #fff;
     border: none;
     margin-left: 10px;
+    margin-top: 70px;
+
   }
   .login_button:focus,
   .login_button:hover {
@@ -159,7 +161,7 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-left: 0px;
+    margin-left: -10px;
     margin-top: -70px;
   }
   .login_button:focus,
