@@ -127,13 +127,13 @@ function CreateAccount() {
   return (
     <div className="account_mainContainer">
       <LoginHeader />
-          <div className="account_head">
-            <h1>CREATE MY ACCOUNT</h1>
-            <h3>
-              Ensure your details are correct and match the details on your
-              Pachi+ account.
-            </h3>
-          </div>
+      <div className="account_head">
+        <h1>CREATE MY ACCOUNT</h1>
+        <h3>
+          Ensure your details are correct and match the details on your Pachi+
+          account.
+        </h3>
+      </div>
       <div className="account_container">
         <div className="account_contents">
           <form onSubmit={register}>
@@ -176,7 +176,7 @@ function CreateAccount() {
                   <TextField
                     id="date"
                     type="date"
-                    defaultValue="mm / dd / yyyy"
+                    defaultValue="mm/dd/yyyy"
                     InputProps={{
                       shrink: true,
                       disableUnderline: true,

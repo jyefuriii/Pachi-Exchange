@@ -1,6 +1,5 @@
 .login_container {
   width: 100%;
-  min-width: 769px;
   height: 100%;
   margin-bottom: 0 !important;
 }
@@ -171,7 +170,7 @@ form > .forgot_pw {
     min-width: 481px;
     max-width: 768px;
     height: auto;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .login_banner {
     height: auto;
@@ -204,10 +203,12 @@ form > .forgot_pw {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .login_container {
+    position: relative;
     width: 100%;
-    min-width: 320px !important;
-    max-width: 480px !important;
-    height: 100vh;
+    min-width: 320px;
+    max-width: 480px;
+    height: auto;
+    margin-bottom: 0 !important;
     overflow-x: hidden;
   }
 

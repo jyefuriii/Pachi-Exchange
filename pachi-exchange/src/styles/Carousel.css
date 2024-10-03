@@ -53,18 +53,28 @@
   min-width: 1025px;
   max-width: 1420px;
 }
-.carousel-indicators > li {
-  height: 10px;
+.carousel-indicators > button {
+  height: 14px;
   width: 10px;
-  border-radius: 50%;
+  border-radius: 50% !important;
   background-color: #3fa2f7 !important;
+  border: 1.5px solid white;
+  margin: 3px;
 }
 .carousel-indicators {
-  margin-top: 50px;
+  margin-top: 40px;
   position: relative;
 }
 .carousel-indicators .active {
   background-color: #297fca !important;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  display: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important ;
 }
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
@@ -321,6 +331,12 @@
     min-width: 769px;
     max-width: 1920px;
   }
+
+  .carousel-indicators {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
 
   .banner_head4 {
     width: 700px;

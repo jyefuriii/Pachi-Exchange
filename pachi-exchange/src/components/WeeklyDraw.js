@@ -311,12 +311,14 @@ function WeeklyDraw() {
                   USE MY FREE ENTRY
                 </button>
               </div>
-              <span>
-                View my sweepstake entries in
-                <a className="drawAccount_link" href="/MyAccount">
-                  My Account
-                </a>
-              </span>
+              <div className="weeklyDraw_span">
+                <span>
+                  View my sweepstake entries in
+                  <a className="drawAccount_link" href="/MyAccount">
+                    My Account
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>

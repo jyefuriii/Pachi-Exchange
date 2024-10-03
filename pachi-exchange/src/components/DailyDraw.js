@@ -196,7 +196,7 @@ function DailyDraw() {
       Swal.fire({
         showCloseButton: true,
         closeButtonText: "X",
-     title: `<img src="${assets.pachi_logo}" alt=""/>`,
+        title: `<img src="${assets.pachi_logo}" alt=""/>`,
         showConfirmButton: false,
         html: `<div style="position: relative;">
           <div style="position: relative; z-index: 1; padding: 50px;">
@@ -277,12 +277,14 @@ function DailyDraw() {
                   USE MY FREE ENTRY
                 </button>
               </div>
-              <span>
-                View my sweepstake entries in
-                <a className="drawAccount_link" href="/MyAccount">
-                  My Account
-                </a>
-              </span>
+              <div className="dailyDraw_span">
+                <span>
+                  View my sweepstake entries in
+                  <a className="drawAccount_link" href="/MyAccount">
+                    My Account
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>

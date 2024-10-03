@@ -96,8 +96,8 @@ function MonthlyDraw() {
         });
       } catch (error) {
         Swal.fire({
-            showCloseButton: true,
-            background: "transparent",
+          showCloseButton: true,
+          background: "transparent",
           closeButtonText: "X",
           title: `<img src="${assets.pachi_logo}" alt=""/>`,
           showConfirmButton: false,
@@ -287,12 +287,14 @@ function MonthlyDraw() {
                   USE MY FREE ENTRY
                 </button>
               </div>
-              <span>
-                View my sweepstake entries in
-                <a className="drawAccount_link" href="/MyAccount">
-                  My Account
-                </a>
-              </span>
+              <div className="weeklyDraw_span">
+                <span>
+                  View my sweepstake entries in
+                  <a className="drawAccount_link" href="/MyAccount">
+                    My Account
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>

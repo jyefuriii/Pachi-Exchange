@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   min-width: 100%;
+  overflow-x: hidden;
 }
 .land_header {
   background: #e4f1fd;
@@ -32,7 +33,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
   color: #fff;
-  margin-left: -100px;
+  margin-left: -600px;
   border: none;
 }
 .login_button:focus,
@@ -94,7 +95,7 @@
     align-content: center;
     color: #fff;
     border: none;
-    margin-left: 10px;
+    margin-left: -10px;
     margin-top: 70px;
 
   }

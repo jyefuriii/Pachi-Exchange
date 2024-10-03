@@ -1,8 +1,8 @@
 .loginHeader_container {
   width: 100%;
-  min-width: 100%;
   height: auto;
-}
+  overflow-x: hidden;
+ }
 .login_header {
   background: #e4f1fd;
   height: 92px;
@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  overflow-x: hidden !important;
 }
 .pachi_logo {
   height: 52px;
@@ -42,7 +43,7 @@
   align-content: center;
   color: #297fca;
   border: none;
-  margin-left: -110px;
+  margin-left: -610px;
   margin-top: -15px;
 }
 .home_buttons:focus,

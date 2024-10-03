@@ -102,7 +102,7 @@
   margin-bottom: auto;
 }
 .weeklyDraw_rewards {
-display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
@@ -311,4 +311,604 @@ display: flex;
 .swalCloseButton:hover {
   margin-top: -18px;
   margin-right: 20px;
+}
+
+@media (min-width: 481px) and (max-width: 1230px) {
+  .weeklyDraw_mainContainer {
+    background: #fff;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+    width: 100%;
+    min-width: 481px;
+    max-width: 1230px;
+  }
+  .weeklyDraw_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 481px;
+    max-width: 1230px;
+    height: auto;
+    padding: 15px;
+  }
+  .weeklyDraw_head {
+    background: #fff;
+    padding-top: 100px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 481px;
+    max-width: 1230px;
+  }
+
+  .weeklyDraw_head > h1 {
+    height: 60px;
+    font-family: Arial;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    color: #207fca;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    width: 100%;
+    min-width: 481px;
+    max-width: 1230px;
+  }
+  .weeklyDraw_head > h3 {
+    height: 23px;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    color: #207fca;
+    margin-bottom: 80px;
+  }
+  .drawEntry_container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    min-width: 460px;
+    max-width: 700px;
+    border-radius: 40px;
+    background: #3fa2f7;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 120px;
+  }
+  .drawEntry_header {
+    height: 80px !important;
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+    border-radius: 0px;
+    background: #6b6b6b;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .drawEntry_header > h2 {
+    height: 40px;
+    width: 100%;
+    font-family: Arial;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center !important;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-left: 10px !important;
+    margin-top: 23px !important;
+    margin-bottom: auto;
+  }
+  .weeklyDraw_rewards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+    min-width: 420px;
+    max-width: 480px;
+    border-radius: 24px;
+    background: #434343;
+    margin-right: 0px !important;
+    margin-top: 50px;
+    margin-bottom: -75px;
+  }
+  .weeklyDraw_rewards > span {
+    height: 30px;
+    width: fit-content;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: auto;
+  }
+  .weeklyEntry_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .weeklyEntry_image {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    align-items: center;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+  .weeklyEntry_image > img {
+    width: 150px;
+  }
+  .weeklyEntryInput_quantity > label {
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    width: fit-content;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .weeklyEntryInput_tickets > label {
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    width: fit-content;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .weeklyEntryInput_quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+  }
+  .weeklyEntryInput_tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .drawButton_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .weeklyEntry_button {
+    height: 54px;
+    width: 207px;
+    border-radius: 11px;
+    background: #297fca;
+    border: #fff;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  .weeklyFree_button {
+    height: 54px;
+    width: 207px;
+    border-radius: 11px;
+    background: #297fca;
+    border: #fff;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+  }
+  .weeklyEntry_button:hover,
+  .weeklyFree_button:hover {
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgb(230, 226, 241);
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+  .weeklyDraw_col2 {
+    margin-bottom: 50px;
+  }
+  .weeklyDraw_span > span {
+    height: 23px;
+    width: 100%;
+    min-width: 460px;
+    max-width: 700px;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 0px;
+  }
+  .drawAccount_link {
+    margin-left: 5px;
+    width: 100%;
+    font-family: Arial;
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px !important;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .weeklyDraw_mainContainer {
+    background: #fff;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+  .weeklyDraw_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: auto;
+    padding: 15px;
+  }
+  .weeklyDraw_head {
+    background: #fff;
+    padding-top: 100px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  .weeklyDraw_head > h1 {
+    height: 60px;
+    font-family: Arial;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    color: #207fca;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+  .weeklyDraw_head > h3 {
+    height: 23px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    color: #207fca;
+    margin-bottom: 80px;
+  }
+  .drawEntry_container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    border-radius: 40px;
+    background: #3fa2f7;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 120px;
+  }
+  .drawEntry_header {
+    height: 80px !important;
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+    border-radius: 0px;
+    background: #6b6b6b;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .drawEntry_header > h2 {
+    height: 40px;
+    width: 100%;
+    font-family: Arial;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center !important;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-left: 10px !important;
+    margin-top: 150px !important;
+  }
+  .weeklyDraw_rewards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    align-content: center;
+    align-items: center;
+    width: 95%;
+    border-radius: 24px;
+    background: #434343;
+    margin-right: 0px !important;
+    margin-top: 50px;
+    margin-bottom: -75px;
+  }
+  .weeklyDraw_rewards > span {
+    height: 30px;
+    width: 100%;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: auto;
+  }
+  .weeklyEntry_contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .weeklyEntry_image {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    align-items: center;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+  .weeklyEntry_image > img {
+    width: 150px;
+  }
+  .weeklyEntryInput_quantity > label {
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    width: fit-content;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .weeklyEntryInput_tickets > label {
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    width: fit-content;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .weeklyEntryInput_quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+  }
+  .weeklyEntryInput_tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .drawButton_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .weeklyEntry_button {
+    height: 54px;
+    width: 207px;
+    border-radius: 11px;
+    background: #297fca;
+    border: #fff;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  .weeklyFree_button {
+    height: 54px;
+    width: 207px;
+    border-radius: 11px;
+    background: #297fca;
+    border: #fff;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+  }
+  .weeklyEntry_button:hover,
+  .weekyFree_button:hover {
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgb(230, 226, 241);
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+  .weeklyDraw_col2 {
+    margin-bottom: 50px;
+  }
+  .weeklyDraw_span > span {
+    height: 23px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 420px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 0px;
+  }
+  .drawAccount_link {
+    margin-left: 5px;
+    height: 23px;
+    width: 100%;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px !important;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
 }
