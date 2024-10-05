@@ -8,7 +8,6 @@
   align-content: center;
   align-items: center;
   padding: 10px 20px;
-  overflow-x: hidden;
 }
 
 .home_header {
@@ -19,7 +18,6 @@
   align-items: center;
   align-content: center;
   width: 100%;
-  overflow-x: hidden;
 }
 
 .pageNav {
@@ -28,7 +26,7 @@
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
-  overflow-x: hidden;
+  margin-right: -5px;
 }
 
 .nav_link {

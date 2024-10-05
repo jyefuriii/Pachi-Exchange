@@ -140,8 +140,8 @@ const StyledMenu = styled.nav`
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly;
-      padding: 0 30px;
-      margin-right: -115px;
+      padding: 0 0 0 30px;
+      margin-right: -90px;
       margin-top: -108px;
     }
     .account_name {
