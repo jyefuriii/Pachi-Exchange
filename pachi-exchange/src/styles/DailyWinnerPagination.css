@@ -22,6 +22,37 @@ body {
   height: 400px;
   background: #fff;
 }
+.dailyWinner-container {
+  display: flex;
+  justify-content: center; /* Center the table within the container */
+  margin: 0 auto; /* Center the container */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dailyDrawWinner_table {
+  width: 100%; /* Make the table full width */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+  margin: 10px; /* Add margin around the table */
+  table-layout: fixed; /* Fix the layout of the table */
+}
+
+.dailyDrawWinner_table th,
+.dailyDrawWinner_table td {
+  text-align: center; /* Center text in headers and data */
+  padding: 10px; /* Add padding for better spacing */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dailyDrawWinner_table td {
+  color: #297fca;
+}
+.dailyDrawWinner_table th {
+  background-color: #f2f2f2; /* Light background for header */
+  font-weight: bold; /* Bold header text */
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   .dailyWinner-container {
@@ -33,24 +64,71 @@ body {
     height: max-content;
     background: none;
     width: 100%;
-    min-width: 280px;
-    max-width: 440px;
+    min-width: 320px;
+    max-width: 480px;
     background: transparent;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .dailyWinner_column {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 0;
-    padding-top: 20px;
-    width:min-content;
-    min-width: 280px;
-    max-width: 440px;
-    height: 540px;
+  .dailyDrawWinner_table {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    margin: auto;
+    margin-top: -50px;
+  }
+
+  .dailyDrawWinner_table td {
+    padding: 8px; /* Reduce padding for smaller screens */
+    font-size: 10px;
+  }
+  .dailyDrawWinner_table th {
+    padding-bottom: 25px;
+    font-size: 12px;
     background: transparent;
-    border-radius: 20px;
+    color: #fff;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .dailyWinner-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: max-content;
+    background: none;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dailyDrawWinner_table {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    margin: auto;
+    margin-top: -50px;
+  }
+
+  .dailyDrawWinner_table td {
+    text-align: center; /* Center text in headers and data */
+    padding: 10px; /* Add padding for better spacing */
+    overflow: hidden; /* Hide overflow */
+    font-size: 12px;
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+
+  .dailyDrawWinner_table th {
+    padding-bottom: 25px;
+    font-size: 14px;
+    background: transparent;
+    color: #fff;
   }
 }

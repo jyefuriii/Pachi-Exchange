@@ -100,7 +100,6 @@
 }
 .sweepstakesResult_colData {
   height: 456px;
-  width: 1122px;
   border-radius: 30px;
   background: #ffffff;
 }
@@ -252,6 +251,8 @@
 
   .sweepstakesResult_colName {
     width: 100%;
+    min-width: 320px;
+    max-width: 480px;
     padding: 10px;
     height: 100%;
     padding-bottom: 50px;
@@ -292,7 +293,7 @@
   .sweepstakesResult_rewards > img {
     height: 30px;
     width: 30px;
-    padding:5px;
+    padding: 5px;
   }
   .sweepstakesResult_rewards > span {
     font-size: 10px;
@@ -301,7 +302,7 @@
   }
 
   .sweepstakesResult_colData {
-    width: 90%;
+    width: 100%;
     min-width: 320px;
     max-width: 480px;
     height: 100%;
@@ -311,45 +312,90 @@
 /* For medium screens between 481px and 768px */
 @media (min-width: 481px) and (max-width: 768px) {
   .sweepstakesResult_mainContainer {
-    padding: 0 20px;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
   }
 
   .sweepstakesResult_head > h1 {
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: 20px;
+  }
+
+  .sweepstakesResult_header,
+  .sweepstakesResult_header2,
+  .sweepstakesResult_header3 {
+    display: flex;
+    flex-direction: column;
   }
 
   .sweepstakesResult_container {
-    padding: 0 15px;
-    margin-bottom: 40px;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    padding: 0 10px;
+    margin-bottom: 30px;
   }
 
   .sweepstakesResult_colName {
-    width: 90%;
-    padding: 15px;
+    width: 100%;
+    min-width: 481px;
+    max-width: 768px;
+    padding: 10px;
+    height: 100%;
+    padding-bottom: 50px;
+    border-radius: 20px;
   }
 
   .sweepstakes_colHead {
-    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 481px;
+    max-width: 768px;
+  }
+  .sweepstakes_colHead > span {
+    flex: 1;
+    gap: 10px;
+    font-size: 12px;
   }
 
   .sweepstakesResult_header h2,
   .sweepstakesResult_header2 h2,
   .sweepstakesResult_header3 h2 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .sweepstakesResult_rewards {
     flex-direction: row;
-    width: 80%;
-    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  .sweepstakesResult_rewards > img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+  }
+  .sweepstakesResult_rewards > span {
+    font-size: 10px;
+    line-height: 35px;
+    width: 100%;
   }
 
   .sweepstakesResult_colData {
     width: 100%;
-    border-radius: 20px;
+    min-width: 481px;
+    max-width: 768px;
+    height: 100%;
   }
 }
 

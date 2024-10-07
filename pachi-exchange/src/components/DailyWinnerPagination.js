@@ -4,21 +4,20 @@ import DrawWinnerDaily from "../components/DrawWinnerDaily";
 import axios from "axios";
 
 const renderDailyWinnersData = (lotteryEntry) => {
-  return lotteryEntry.map((item) => {
-    return (
-      <DrawWinnerDaily
-        key={item._id}
-        _id={item._id}
-        drawDate={item.drawDate}
-        drawNumber={item.drawNumber}
-        username={item.username}
-      />
-    );
-  });
+  return lotteryEntry.map((item) => (
+    <DrawWinnerDaily
+      key={item._id}
+      drawDate={item.drawDate}
+      drawNumber={item.drawNumber}
+      username={item.username}
+    />
+  ));
 };
 
 function DailyWinnerPagination() {
   const [drawWinners, setDrawWinners] = useState([]);
+
+  // Fetch daily winners from API
   async function getDailyWinners() {
     const lotteryWinnerRes = await axios.get(
       "http://localhost:8001/lotteryWinner/daily"
@@ -26,17 +25,24 @@ function DailyWinnerPagination() {
     setDrawWinners(lotteryWinnerRes.data);
   }
 
-  //useEffect
+  // Fetch data only once when component mounts
   useEffect(() => {
     getDailyWinners();
-  }, [drawWinners]);
+  }, []);
 
   return (
     <div>
       <div className="dailyWinner-container">
-        <div className="dailyWinner_column">
-          {renderDailyWinnersData(drawWinners)}
-        </div>
+        <table className="dailyDrawWinner_table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Draw Number</th>
+              <th>Winner</th>
+            </tr>
+          </thead>
+          <tbody>{renderDailyWinnersData(drawWinners)}</tbody>
+        </table>
       </div>
     </div>
   );
