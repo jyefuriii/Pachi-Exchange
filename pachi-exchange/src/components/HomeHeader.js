@@ -50,6 +50,25 @@ function HomeHeader() {
     history.push("/");
   }
 
+  // Close the menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (node.current && !node.current.contains(event.target)) {
+        setOpen(false); // Close the menu
+      }
+    }
+
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
+
   const Menu = ({ open }) => {
     return (
       <StyledMenu open={open}>

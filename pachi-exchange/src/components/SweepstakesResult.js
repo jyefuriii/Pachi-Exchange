@@ -21,9 +21,10 @@ function SweepstakesResult() {
         <div className="sweepstakesResult_header">
           <h2>Daily Draw Result for the Last 7 Days</h2>
           <div className="sweepstakesResult_rewards">
-            <img src={assets.sweepstakesStar} alt="" />
-            <span>Price at stake:</span>
-            <span>250 Tickets </span>
+            <div className="sweepstakeResult_tab">
+              <img src={assets.sweepstakesStar} alt="" />
+              <span>Price at stake: 250 Tickets</span>
+            </div>
           </div>
         </div>
         <div className="sweepstakesResult_colName">
@@ -37,9 +38,10 @@ function SweepstakesResult() {
         <div className="sweepstakesResult_header2">
           <h2>Weekly Draw Result for the Last 7 Draws</h2>
           <div className="sweepstakesResult_rewards">
-            <img src={assets.sweepstakesStar} alt="" />
-            <span>Price at stake:</span>
-            <span>20.00 USD </span>
+            <div className="sweepstakeResult_tab">
+              <img src={assets.sweepstakesStar} alt="" />
+              <span>Price at stake: 20.00 USD</span>
+            </div>
           </div>
         </div>
         <div className="sweepstakesResult_colName">
@@ -57,9 +59,10 @@ function SweepstakesResult() {
         <div className="sweepstakesResult_header3">
           <h2>Monthly Draw Result for the Last 7 Draws</h2>
           <div className="sweepstakesResult_rewards">
-            <img src={assets.sweepstakesStar} alt="" />
-            <span>Price at stake:</span>
-            <span>50.00 USD </span>
+            <div className="sweepstakeResult_tab">
+              <img src={assets.sweepstakesStar} alt="" />
+              <span>Price at stake: 50.00 USD </span>
+            </div>
           </div>
         </div>
         <div className="sweepstakesResult_colName">
