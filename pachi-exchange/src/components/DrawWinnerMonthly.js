@@ -15,17 +15,17 @@ function DrawWinnerMonthly({ username, drawNumber, drawDate }) {
   var today = new Date(drawDate);
   const dailyDrawDate = today.toLocaleString("en-PH", options);
   return (
-    <div className="dailyDrawWinner_info">
-      <p className="dailyDraw_date">
+    <tr>
+      <td className="dailyDraw_date">
         <strong>{dailyDrawDate}</strong>
-      </p>
-      <p className="dailyDraw_number">
+      </td>
+      <td className="dailyDraw_number">
         <strong>{drawNumber}</strong>
-      </p>
-      <p className="dailyDraw_username">
+      </td>
+      <td className="dailyDraw_username">
         <strong>{username}</strong>
-      </p>
-    </div>
+      </td>
+    </tr>
   );
 }
 
