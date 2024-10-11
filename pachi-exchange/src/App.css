@@ -1,8 +1,6 @@
 .App {
   text-align: center;
   width: 100%;
-  min-width: 100%;
-  max-width: 100%;
   height: auto;
 }
 input[type="number"]::-webkit-inner-spin-button {
@@ -12,5 +10,3 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 25px;
   width: 10px;
 }
-
-
