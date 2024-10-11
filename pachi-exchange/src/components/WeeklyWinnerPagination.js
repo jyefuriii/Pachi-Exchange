@@ -34,9 +34,16 @@ function WeeklyWinnerPagination() {
   return (
     <div>
       <div className="dailyWinner-container">
-        <div className="dailyWinner_column">
-          {renderWeeklyWinnersData(drawWinners)}
-        </div>
+        <table className="dailyDrawWinner_table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Draw Number</th>
+              <th>Winner</th>
+            </tr>
+          </thead>
+          <tbody>{renderWeeklyWinnersData(drawWinners)}</tbody>
+        </table>
       </div>
     </div>
   );

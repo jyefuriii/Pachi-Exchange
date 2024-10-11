@@ -45,11 +45,7 @@ function SweepstakesResult() {
           </div>
         </div>
         <div className="sweepstakesResult_colName">
-          <div className="sweepstakes_colHead">
-            <span>Date</span>
-            <span>Draw Number</span>
-            <span>Winner</span>
-          </div>
+          <div className="sweepstakes_colHead"></div>
           <div className="sweepstakesResult_colData">
             <WeeklyWinnerPagination />
           </div>
@@ -66,11 +62,7 @@ function SweepstakesResult() {
           </div>
         </div>
         <div className="sweepstakesResult_colName">
-          <div className="sweepstakes_colHead">
-            <span>Date</span>
-            <span>Draw Number</span>
-            <span>Winner</span>
-          </div>
+          <div className="sweepstakes_colHead"></div>
           <div className="sweepstakesResult_colData">
             <MonthlyWinnerPagination />
           </div>
