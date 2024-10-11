@@ -425,8 +425,13 @@
   .shop_container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     height: 649px;
     width: 100%;
+    min-width: 320px;
+    max-width: 480px;
     border-radius: 0px;
     background-color: #3fa2f7;
     height: 100%;
@@ -437,6 +442,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-content: center;
     width: 100%;
     margin-top: -50px;
   }
@@ -458,9 +464,13 @@
   .shop_content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     align-content: center;
+    margin-left: -50px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
   }
   .shop_col1 {
     display: flex;
@@ -478,7 +488,6 @@
     justify-content: center;
     align-items: center;
     margin-left: 100px;
-    width: 100%;
   }
   .shop_col3 {
     display: flex;
@@ -486,12 +495,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-left: 100px;
-    width: 100%;
-    min-width: 320px;
-    max-width: 480px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-left: 0px;
   }
   .shop_arrow {
     width: fit-content;
@@ -503,30 +507,17 @@
   .shop_arrow2 {
     width: fit-content;
     transform: rotate(90deg);
-    margin-left: 75px;
+    margin-left: 80px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
   .claimCollect_img2 {
-    width: 100px;
-    padding-top: 20px;
-    margin-left: 0px;
-    margin-top: -420px;
+    margin-left: -237px;
+    margin-top: -40px;
   }
   .claimCollect_img {
-    width: 100%;
-    min-width: 300px;
-    max-width: 460px;
-  }
-  .browseSelect_img {
-    width: 100%;
-    min-width: 270px;
-    max-width: 450px;
-  }
-  .cartConfirm_img {
-    width: 100%;
-    min-width: 300px;
-    max-width: 460px;
+    margin-left: 0px;
+    
   }
 
   .shopPrize_row {
