@@ -553,18 +553,28 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-
-  .cashOut_container {
-    height: 227px;
-    width: 100% !important;
+  .cashTickets_container {
+    display: flex;
+    width: 100%;
     min-width: 320px;
     max-width: 480px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cashOut_container {
+    height: 227px;
+    width: 100%;
+    min-width: 280px;
+    max-width: 460px;
     background: #3fa2f7;
     margin-bottom: 20px;
+    margin-left: auto;
     align-items: center;
     align-content: center;
     justify-content: center;
   }
+
   .cashOut_container > span,
   .sweepstakesLog_container > span,
   .rewardsLog_container > span {
@@ -576,8 +586,13 @@
     line-height: 40px;
   }
 
+  .cashOut_container input {
+    width: 90%;
+  }
+  .cashAmount,
   .ticketAmount {
     display: flex;
+    margin: auto;
     flex-direction: column;
     align-items: center;
     align-content: center;
