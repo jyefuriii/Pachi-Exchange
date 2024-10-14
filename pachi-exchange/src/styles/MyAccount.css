@@ -622,6 +622,7 @@
     background: #3fa2f7;
     height: fit-content;
     width: 100%;
+    justify-content: center;
     min-width: 320px;
     max-width: 480px;
     padding-bottom: 100px;
@@ -630,7 +631,6 @@
 
   .personalDetails_container > h2 {
     height: 40px;
-    width: fit-content;
     font-family: Arial;
     font-size: 35px;
     font-style: normal;
@@ -646,7 +646,10 @@
   .person_info_container {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
+    width: 100%;
+    min-width: 300px;
+    max-width: 460px;
     align-items: center;
     align-content: center;
     margin-left: 50px;
