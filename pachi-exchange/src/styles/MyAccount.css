@@ -621,38 +621,41 @@
   .personalDetails_container {
     background: #3fa2f7;
     height: fit-content;
-    width: 100%;
+    width: 90%;
     justify-content: center;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 480px;
     padding-bottom: 100px;
     margin-bottom: 55px;
+    margin-left: 0;
   }
 
   .personalDetails_container > h2 {
     height: 40px;
     font-family: Arial;
-    font-size: 35px;
+    width: 100%;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
-    padding: 30px;
-    padding-left: 40px;
+    margin-left: 0;
+    padding-left: 30px;
     margin-bottom: 35px;
   }
   .person_info_container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    min-width: 300px;
-    max-width: 460px;
+    width: 90%;
+    min-width: 320px;
+    max-width: 480px;
     align-items: center;
     align-content: center;
     margin-left: 50px;
+    padding: 10px;
   }
 
   .person_details_img {
@@ -665,28 +668,31 @@
   }
   .person_details_img > img {
     padding: 20px;
+    width: 4.5rem;
+    margin-left: -20px;
   }
   .person_details_fields {
     display: flex;
     width: fit-content;
+    min-width: 320px;
+    max-width: 480px;
     flex-direction: column;
     align-content: left;
   }
   .person_details_info {
     font-family: Arial;
-    width: 350px;
-    max-width: 100%;
+    width: fit-content;
     overflow-wrap: inherit;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
-    margin-left: 10px;
-    margin-top: 40px;
-    padding-bottom: 35px;
+    margin-left: 5px;
+    margin-top: 30px;
+    padding-bottom: 30px;
   }
 
   .account_editButton {
@@ -704,8 +710,8 @@
     text-align: center;
     position: relative;
     border: #fff;
-    margin-top: 150px;
-    margin-left: -550px;
+    margin-top: 160px;
+    margin-left: -470px;
   }
   .myAccount_rows {
     display: flex;
@@ -716,7 +722,50 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 0 !important;
-    margin: 0 !important;
+  }
+  .myAccount_col1{
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+  .shippingDetails_container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+  }
+  .shippingDetails_container h2 {
+    font-size: 30px;
+    margin-top: -40px;
+  }
+  .shipping_details_info{
+    font-size: 16px;
+    width:100%;
+    min-width: 320px;
+    max-width: 400px;
+    overflow-wrap: break-word;
+  }
+    .shipping_editButton {
+    background: #297fca;
+    height: 34px;
+    width: 98px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    position: relative;
+    border: #fff;
+    margin-top: 160px;
+    margin-left: -470px;
   }
 }
