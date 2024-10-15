@@ -628,6 +628,7 @@
     padding-bottom: 100px;
     margin-bottom: 55px;
     margin-left: 0;
+    margin-top: -10px;
   }
 
   .personalDetails_container > h2 {
@@ -711,7 +712,7 @@
     position: relative;
     border: #fff;
     margin-top: 160px;
-    margin-left: -470px;
+    margin-left: -490px;
   }
   .myAccount_rows {
     display: flex;
@@ -723,7 +724,7 @@
     align-items: center;
     align-content: center;
   }
-  .myAccount_col1{
+  .myAccount_col1 {
     width: 100%;
     min-width: 320px;
     max-width: 480px;
@@ -743,14 +744,27 @@
     font-size: 30px;
     margin-top: -40px;
   }
-  .shipping_details_info{
+  .myAccount_col1 img {
+    margin-left: 60px;
+  }
+  .shipping_details_fields {
+    height: 220px;
+    margin-left: -5px;
+  }
+  .shipping_details_fields span:first-of-type {
+    padding-top: 10px;
+  }
+  .shipping_details_fields span:last-of-type {
+    margin-top: 10px;
+  }
+  .shipping_details_info {
     font-size: 16px;
-    width:100%;
+    width: fit-content;
     min-width: 320px;
-    max-width: 400px;
+    max-width: 480px;
     overflow-wrap: break-word;
   }
-    .shipping_editButton {
+  .shipping_editButton {
     background: #297fca;
     height: 34px;
     width: 98px;
@@ -765,7 +779,7 @@
     text-align: center;
     position: relative;
     border: #fff;
-    margin-top: 160px;
-    margin-left: -470px;
+    margin-top: 120px;
+    margin-left: -490px;
   }
 }
