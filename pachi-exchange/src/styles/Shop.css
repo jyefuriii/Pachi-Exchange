@@ -464,7 +464,7 @@
   .shop_content {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     margin-left: -50px;
@@ -500,24 +500,33 @@
   .shop_arrow {
     width: fit-content;
     transform: rotate(90deg);
-    margin-left: 50px;
+    margin-left: 0;
     margin-top: 50px;
     margin-bottom: 50px;
   }
   .shop_arrow2 {
     width: fit-content;
     transform: rotate(90deg);
-    margin-left: 80px;
+    margin-left: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .claimCollect_img2 {
-    margin-left: -237px;
-    margin-top: -40px;
+  .shop_col2 img,
+  .shop_col3 .claimCollect_img {
+    margin-left: -50px;
+    width: 90%;
+    min-width: 300px;
+    max-width: 480px;
   }
-  .claimCollect_img {
-    margin-left: 0px;
-    
+  .shop_col1 img {
+    margin-left: -50px;
+    width: 100%;
+    min-width: 250px;
+  }
+  .claimCollect_img2 {
+    margin-left: -210px;
+    margin-top: -40px;
+    height: 150px;
   }
 
   .shopPrize_row {

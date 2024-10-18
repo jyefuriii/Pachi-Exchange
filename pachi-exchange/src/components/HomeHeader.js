@@ -201,6 +201,9 @@ const StyledMenu = styled.nav`
       height: 40px;
       margin-left: 5px;
     }
+    .account_name {
+      padding-left: 0px;
+    }
   }
 `;
 

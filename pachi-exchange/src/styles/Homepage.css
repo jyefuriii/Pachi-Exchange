@@ -1252,6 +1252,7 @@ a > button {
     max-width: 480px;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
