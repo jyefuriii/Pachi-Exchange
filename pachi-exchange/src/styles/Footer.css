@@ -146,8 +146,8 @@ a {
   }
 
   .gap_logo {
-    width: 200px; /* Enlarge logo for larger screens */
-    height: 110px;
+    width: 180px; /* Enlarge logo for larger screens */
+    height: 100px;
   }
 
   .dropdown_toggle {
