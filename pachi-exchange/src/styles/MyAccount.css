@@ -785,6 +785,24 @@
     margin-top: 120px;
     margin-left: -270px;
   }
+  .myAccount_bottom_container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+  .myAccount_bottom_container h3{
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 26px;
+  }
+  .myAccount_bottom_container p{
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .my_account_container {
