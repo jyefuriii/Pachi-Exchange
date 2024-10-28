@@ -84,3 +84,19 @@ body {
 .lArrows {
   color: #fff;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .drawEntry_column {
+    margin-top: -100px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: 100%;
+    background: #fff;
+  }
+  .paginate-ctnDraw {
+    padding-top: 20px;
+    padding-right: 10px;
+    width: 100%;
+    border: 1px solid #3fa2f7;
+  }
+}

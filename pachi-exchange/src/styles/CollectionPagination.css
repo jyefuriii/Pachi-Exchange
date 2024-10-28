@@ -68,3 +68,12 @@ body {
   transform: rotate(45deg);
   margin-bottom: 2px;
 }
+
+@media (min-width:320px) and (max-width: 480px){
+.shopPrize_row{
+    width: 50%;
+    min-width: 160px;
+    max-width: 240px;
+}
+
+}

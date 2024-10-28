@@ -68,6 +68,60 @@
   width: 166px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .collectionCount {
+  position: absolute;
+  margin-top: -170px;
+  margin-left: 85px;
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #297fca;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+  .premiumCollection_container {
+    height: 180px;
+    width: 50%;
+    min-width: 160px;
+    max-width:240px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    margin-left: 0;
+  }
+  .premiumCollection_container > img {
+    height: 110px;
+    width: 40%;
+    min-width: 90px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    margin-left: 0;
+  }
+  .redeem_button {
+  font-family: Arial;
+  font-size: 10px;
+  font-style: normal;
+  font-style: bold;
+  font-weight: 400;
+  text-align: center;
+  line-height: 18.4px;
+  height: 32px;
+  width: 100px;
+  color: #3fa2f7;
+  border-radius: 11px;
+  border: 2px solid #e4f1fd;
+  background: #e4f1fd;
+  margin-top: -10px;
+}
+}
 @media (min-width: 481px) and (max-width: 768px) {
   .premiumCollection_container > img {
     height: 182px;

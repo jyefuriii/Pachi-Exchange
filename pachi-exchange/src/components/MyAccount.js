@@ -160,9 +160,7 @@ function MyAccount() {
                   </p>
                 </div>
                 {drawEntry.length !== 0 ? (
-                  <div>
                     <AccountLotteryPagination />
-                  </div>
                 ) : (
                   <div className="noCollection_container1">
                     <h4>No records to show</h4>
