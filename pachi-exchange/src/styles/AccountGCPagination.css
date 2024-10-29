@@ -87,7 +87,12 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .shopPrize_column {
-    margin-top: -100px;
+    margin-top: -70px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    max-width: 480px;
   }
   .paginate-ctn2 {
     padding-top: 20px;
@@ -95,4 +100,5 @@ body {
     width: 100%;
     border: 1px solid #3fa2f7;
   }
+  
 }

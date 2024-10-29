@@ -72,7 +72,11 @@ function MyAccount() {
             <div className="cashOut_container">
               <span>Pachi Tickets</span>
               <div className="ticketAmount">
-                <img className="AccountTicketImage" src={assets.accountTicket} alt="" />
+                <img
+                  className="AccountTicketImage"
+                  src={assets.accountTicket}
+                  alt=""
+                />
                 <input
                   type="text"
                   value={new Intl.NumberFormat().format(users.userTickets)}
@@ -160,7 +164,9 @@ function MyAccount() {
                   </p>
                 </div>
                 {drawEntry.length !== 0 ? (
+                  <div>
                     <AccountLotteryPagination />
+                  </div>
                 ) : (
                   <div className="noCollection_container1">
                     <h4>No records to show</h4>
