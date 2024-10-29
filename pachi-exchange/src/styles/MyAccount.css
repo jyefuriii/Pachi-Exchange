@@ -558,18 +558,21 @@
     width: 100%;
     min-width: 320px;
     max-width: 480px;
-    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     flex-direction: column;
     justify-content: center;
   }
   .cashOut_container {
     height: 227px;
     width: 100%;
-    min-width: 280px;
-    max-width: 460px;
+    min-width: 320px;
+    max-width: 480px;
     background: #3fa2f7;
     margin-bottom: 20px;
     margin-left: auto;
+    margin-right: auto;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -621,13 +624,14 @@
   .personalDetails_container {
     background: #3fa2f7;
     height: fit-content;
-    width: 90%;
+    width: 100%;
     justify-content: center;
-    min-width: 300px;
+    min-width: 320px;
     max-width: 480px;
     padding-bottom: 100px;
     margin-bottom: 55px;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -10px;
   }
 
@@ -649,13 +653,13 @@
   .person_info_container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 90%;
+    justify-content: left;
+    width: 100%;
     min-width: 320px;
     max-width: 480px;
     align-items: center;
     align-content: center;
-    margin-left: 50px;
+    margin-left: 10px;
     padding: 10px;
   }
 
@@ -670,13 +674,11 @@
   .person_details_img > img {
     padding: 20px;
     width: 4.5rem;
-    margin-left: -20px;
+    margin-left: 0;
   }
   .person_details_fields {
     display: flex;
     width: fit-content;
-    min-width: 320px;
-    max-width: 480px;
     flex-direction: column;
     align-content: left;
   }
@@ -684,6 +686,7 @@
     font-family: Arial;
     width: fit-content;
     overflow-wrap: inherit;
+    justify-content: left;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -709,10 +712,8 @@
     font-weight: 400;
     line-height: 15px;
     text-align: center;
-    position: relative;
-    border: #fff;
     margin-top: 160px;
-    margin-left: -490px;
+    margin-left: -120px;
   }
   .myAccount_rows {
     display: flex;
@@ -730,9 +731,9 @@
     max-width: 480px;
   }
   .shippingDetails_container {
-    width: 90%;
-    min-width: 300px;
-    max-width: 460px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -749,11 +750,10 @@
     padding: 0;
   }
   .myAccount_col1 img {
-    margin-left: -60px;
+    margin-left: 0px;
   }
   .shipping_details_fields {
     height: 220px;
-    margin-left: -5px;
   }
   .shipping_details_fields span:first-of-type {
     padding-top: 10px;
@@ -766,6 +766,8 @@
     width: 100%;
     max-width: 200px;
     overflow-wrap: break-word;
+    margin-left: 0px;
+    padding-left: 0;
   }
   .shipping_editButton {
     background: #297fca;
@@ -781,9 +783,8 @@
     line-height: 15px;
     text-align: center;
     position: relative;
-    border: #fff;
     margin-top: 120px;
-    margin-left: -270px;
+    margin-left: -110px;
   }
   .myAccount_bottom_container {
     width: 100%;
@@ -821,7 +822,8 @@
     justify-content: center;
     align-content: center;
   }
-  .rewardsLog_container, .sweepstakesLog_container {
+  .rewardsLog_container,
+  .sweepstakesLog_container {
     height: 100%;
     width: 100%;
     min-width: 320px;
@@ -836,7 +838,8 @@
     border: 1px solid #3fa2f7;
   }
 
-  .rewards_columnInfo, .sweepstakes_columnInfo {
+  .rewards_columnInfo,
+  .sweepstakes_columnInfo {
     height: auto;
     width: 100%;
     min-width: 320px;
@@ -854,13 +857,13 @@
     flex-direction: row;
     justify-content: space-around;
   }
- 
 
   .sweepstakes_columnHeader,
   .rewards_columnHeader {
     justify-content: center;
   }
-    .rewardsLog_header, .sweepstakesLog_header {
+  .rewardsLog_header,
+  .sweepstakesLog_header {
     margin-top: 40px;
     margin-bottom: 0;
     width: 100%;
@@ -868,7 +871,8 @@
     max-width: 480px;
   }
 
-  .rewards_header, .sweepstakes_header {
+  .rewards_header,
+  .sweepstakes_header {
     font-family: Arial;
     font-size: 20px;
     color: #fff;
@@ -1049,13 +1053,13 @@
   .person_info_container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 90%;
+    justify-content: left;
+    width: 100%;
     min-width: 461px;
     max-width: 748px;
     align-items: center;
-    align-content: left;
-    margin-left: -50px;
+    align-content: center;
+    margin-left: 0;
     padding: 10px;
   }
 
@@ -1070,7 +1074,7 @@
   .person_details_img > img {
     padding: 20px;
     width: 4.5rem;
-    margin-left: -40px;
+    margin-left: 20px;
   }
   .person_details_fields {
     flex-direction: column;
@@ -1141,14 +1145,13 @@
     align-content: center;
     padding: 10px;
     margin-top: -35px;
-    margin-left: 10px;
   }
   .shippingDetails_container h2 {
     font-size: 30px;
     margin-top: -40px;
   }
   .myAccount_col1 img {
-    margin-left: 25px;
+    margin-left: 20px;
   }
   .shipping_details_fields {
     height: 220px;
