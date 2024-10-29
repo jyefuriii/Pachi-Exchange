@@ -173,6 +173,9 @@ a {
 
   .dropdown_menu {
     width: 100%;
+    background: rgba(255,255,255, 0.9);
+    border: 2px solid #297fca;
+
   }
   .dropdown_container {
     margin-left: -20px;
@@ -185,7 +188,9 @@ a {
   }
   .footer_lang_label {
     font-size: 12px;
-    margin-top: 0px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -210px;
   }
   .dropdown_container > a {
     font-size: 12px;

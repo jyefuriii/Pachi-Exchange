@@ -130,7 +130,7 @@ function Cashout() {
               </a>
             </span>
             <div className="cashout_inputs">
-              <div>
+              <div className="cashout_fields">
                 <label>AVAILABLE AMOUNT:</label>
                 <input
                   type="text"
@@ -142,7 +142,7 @@ function Cashout() {
                   }}
                 />
               </div>
-              <div>
+              <div className="cashout_fields">
                 <label>CASHOUT AMOUNT:</label>
                 <input
                   type="number"
@@ -168,7 +168,7 @@ function Cashout() {
           </div>
         </div>
       </div>
-      <Footer />
+     <Footer />
     </div>
   );
 }
